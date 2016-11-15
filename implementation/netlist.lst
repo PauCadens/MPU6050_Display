@@ -1,0 +1,18 @@
+C:\Users\Pc\Documents\VHDL\mpu6050\implementation\mpu6050.ngc 1479233121
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_usb_uart_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_proc_sys_reset_0_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_clock_generator_0_wrapper.ngc 1479233091
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_microblaze_0_ilmb_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_microblaze_0_dlmb_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_axi4lite_0_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_microblaze_0_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_microblaze_0_intc_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_microblaze_0_i_bram_ctrl_wrapper.ngc 1479233046
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_microblaze_0_d_bram_ctrl_wrapper.ngc 1479233056
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_debug_module_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_axi_timer_0_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_leds_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_i2c_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_display16x2_wrapper.ngc 1479233024
+C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050_microblaze_0_bram_block_wrapper.ngc 1479233070
+OK

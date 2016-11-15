@@ -1,0 +1,33 @@
+19:14:51.323 INFO  - Processing command line option -hwspec C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\mpu6050.xml. 
+19:22:11.379 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+19:22:24.937 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:22:35.010 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:23:22.871 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:24:50.410 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:29:33.776 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:38:20.225 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:40:10.754 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:40:37.834 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:43:24.250 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:44:41.456 INFO  - System reset is completed. 
+20:01:09.203 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:02:51.895 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:05:14.621 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:18:42.297 INFO  - System reset is completed. 
+20:28:28.114 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:30:43.323 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:31:23.869 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:32:13.996 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:33:08.368 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:33:31.132 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:37:31.194 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:41:03.991 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:42:10.889 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:46:09.112 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:48:17.661 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:50:53.851 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
