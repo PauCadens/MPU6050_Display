@@ -31,3 +31,53 @@
 20:46:09.112 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
 20:48:17.661 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
 20:50:53.851 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+21:23:57.144 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+17:47:14.897 INFO  - Project mpu6050_hw_platform's source hardware specification located at C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\mpu6050.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+17:47:40.951 INFO  - Copied contents of C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\mpu6050.xml into \mpu6050_hw_platform\system.xml. 
+17:47:40.951 INFO  - Copied contents of C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\mpu6050.bit into \mpu6050_hw_platform\system.bit. 
+17:47:40.951 INFO  - Copied contents of C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\mpu6050_bd.bmm into \mpu6050_hw_platform\system_bd.bmm. 
+17:47:41.264 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:47:43.733 INFO  - Updating hardware inferred compiler options for mpu6050. 
+17:47:43.764 INFO  - Clearing existing target manager status. 
+17:47:47.608 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+17:55:37.925 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+17:57:26.298 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+17:58:50.727 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+18:08:28.652 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+18:11:32.511 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+18:14:40.326 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+18:18:17.789 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+18:19:49.940 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+18:20:25.572 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+18:20:50.198 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+18:21:28.590 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+18:22:39.878 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+18:23:09.418 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+18:24:07.921 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:00:58.878 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:02:38.929 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:03:44.595 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:04:10.725 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:04:57.156 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:05:43.537 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:06:11.138 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:06:37.431 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:07:18.883 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:09:02.906 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:33:55.985 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:36:19.499 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:42:19.893 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:43:37.759 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:45:35.100 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:47:17.175 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:53:11.200 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+19:56:19.058 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:01:50.319 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:04:12.434 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:05:57.767 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:07:28.546 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:08:04.384 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:08:59.285 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:10:12.291 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:10:27.427 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/mpu6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 

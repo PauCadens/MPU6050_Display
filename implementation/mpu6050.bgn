@@ -8,7 +8,7 @@ C:\Xilinx\14.7\ISE_DS\ISE\;C:\Xilinx\14.7\ISE_DS\EDK.
    "mpu6050" is an NCD, version 3.2, device xc6slx9, package csg324, speed -2
 Opened constraints file mpu6050.pcf.
 
-Tue Nov 15 19:09:55 2016
+Wed Nov 16 17:44:59 2016
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -w -g TdoPin:PULLNONE -g StartUpClk:JTAGCLK mpu6050.ncd 
 

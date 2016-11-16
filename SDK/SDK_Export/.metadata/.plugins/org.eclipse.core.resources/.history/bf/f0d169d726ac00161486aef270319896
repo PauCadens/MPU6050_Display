@@ -1,0 +1,94 @@
+#include "xparameters.h"
+#include "xbasic_types.h"
+#include "xgpio.h"
+#include "xstatus.h"
+#include "xtmrctr.h"
+#include "display.h"
+#include "mpu6050.h"
+#include "stdlib.h"
+
+void getAsciiValues(float value, char * buffer);
+
+// Global variables
+
+XGpio GpioOutput;
+XTmrCtr DelayTimer;
+
+extern float ACCEL_XANGLE;
+extern float ACCEL_YANGLE;
+
+char fila1[16] = {'X', ':', '\0', '\0', '\0', '\0', '\0', 176, 'Y', ':', '\0', '\0', '\0', '\0', '\0', 176};
+char fila2[16] = {'Z', ':', '\0', '\0', '\0', '\0', '\0', 176, '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0'};
+
+// Main function
+
+int main (void)
+{
+  Xuint32 status;
+
+  // Clear the screen
+  xil_printf("%c[2J",27);
+  xil_printf("16x2 LCD Driver\r\n");
+  xil_printf("\r\n");
+
+  // Initialize the Timer
+  status = XTmrCtr_Initialize(&DelayTimer, XPAR_AXI_TIMER_0_DEVICE_ID);
+  if (status != XST_SUCCESS){
+    xil_printf("Timer failed to initialize\r\n");
+    return XST_FAILURE;
+  }
+  XTmrCtr_SetOptions(&DelayTimer, 1, XTC_DOWN_COUNT_OPTION);
+
+  // Initialize the GPIO driver for the LCD
+   status = XGpio_Initialize(&GpioOutput, XPAR_DISPLAY16X2_DEVICE_ID);
+   if (status != XST_SUCCESS){
+     xil_printf("GPIO failed to initialize\r\n");
+     return XST_FAILURE;
+   }
+
+  // Set the direction for all signals to be outputs
+  XGpio_SetDataDirection(&GpioOutput, 1, 0x00);
+
+  // Initialize the LCD
+  lcd_init();
+  xil_printf("LCD INIT OK\n");
+  lcd_goto(0,0);
+  lcd_puts("Hello");
+  lcd_goto(1,0);
+  lcd_puts("Worldwide");
+  MpuSensorInit();
+
+
+  while(1){
+	  Get_Accel_Values();
+	  Get_Accel_Angles();
+	  Get_GyroRates();
+	  getAsciiValues(ACCEL_XANGLE, &fila1[2]);
+	  getAsciiValues(ACCEL_YANGLE, &fila1[8]);
+	  lcd_goto(0,0);
+	  lcd_puts(&fila1[0]);
+	  lcd_goto(1,0);
+	  lcd_puts(&fila2[0]);
+	  //delay_ms(50);
+  }
+}
+
+void getAsciiValues(float value, char * buffer)
+{
+	u8 part_entera = (int) abs(value);
+	u8 part_decimal = (abs(value) - part_entera)*100;
+
+	if (value < 0)
+	{
+		buffer[0] = '-';
+
+	}
+	else
+	{
+		buffer[0] = ' ';
+	}
+	buffer[1] = ((part_entera - (part_entera % 10))/10) + '0';
+	buffer[2] = (part_entera % 10) + '0';
+	buffer[3] = '.';
+	buffer[4] = part_decimal + '0';
+}

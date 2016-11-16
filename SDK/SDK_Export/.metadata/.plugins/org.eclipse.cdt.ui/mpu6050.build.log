@@ -1,9 +1,9 @@
-20:50:45 **** Auto Build of configuration Debug for project mpu6050 ****
+20:10:16 **** Auto Build of configuration Debug for project mpu6050 ****
 make all 
-'Building file: ../src/mpu6050.c'
+'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
-'Finished building: ../src/mpu6050.c'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
 ' '
 'Building target: mpu6050.elf'
 'Invoking: MicroBlaze gcc linker'
@@ -13,7 +13,7 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu6050_bsp/microblaze_0/lib -mlittl
 'Invoking: MicroBlaze Print Size'
 mb-size mpu6050.elf  |tee "mpu6050.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  30424	    404	  33012	  63840	   f960	mpu6050.elf
+  31940	    444	  33016	  65400	   ff78	mpu6050.elf
 'Finished building: mpu6050.elf.size'
 ' '
 'Invoking: Xilinx ELF Check'
@@ -30,5 +30,5 @@ elfcheck passed.
 'Finished building: mpu6050.elf.elfcheck'
 ' '
 
-20:50:47 Build Finished (took 1s.938ms)
+20:10:18 Build Finished (took 2s.61ms)
 

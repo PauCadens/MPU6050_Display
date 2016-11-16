@@ -128,10 +128,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   5
 
-Total memory usage is 259284 kilobytes
+Total memory usage is 259276 kilobytes
 
 Writing NGD file "mpu6050.ngd" ...
-Total REAL time to NGDBUILD completion: 1 min  25 sec
-Total CPU time to NGDBUILD completion:  1 min  25 sec
+Total REAL time to NGDBUILD completion: 1 min  3 sec
+Total CPU time to NGDBUILD completion:  1 min  3 sec
 
 Writing NGDBUILD log file "mpu6050.bld"...

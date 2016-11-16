@@ -40,17 +40,30 @@ int MpuSensorInit(void)
 		 * Initialize the IIC driver so that it is ready to use.
 		 */
 		xil_printf("Lookup Config ...\r\n");
+		lcd_goto(0,0);
+		lcd_puts("Lookup congig...");
+		lcd_puts("                ");
+		delay_ms(500);
+
 		ConfigPtr = XIic_LookupConfig(IIC_DEVICE_ID);
 		if (ConfigPtr == NULL) {
 			return XST_FAILURE;
 		}
 		xil_printf("Lookup Config OK\r\n");
+		lcd_goto(0,0);
+		lcd_puts("Lookup Confing ok");
+		lcd_puts("                ");
+		delay_ms(500);
 
 		Status = XIic_CfgInitialize(&Iic, ConfigPtr, ConfigPtr->BaseAddress);
 		if (Status != XST_SUCCESS) {
 			return XST_FAILURE;
 		}
 		xil_printf("Config initialize OK\r\n");
+		lcd_goto(0,0);
+		lcd_puts("Cnfg init OK");
+		lcd_puts("                ");
+		delay_ms(500);
 
 		/*
 		 * Start the IIC driver such that it is ready to send and
@@ -59,8 +72,16 @@ int MpuSensorInit(void)
 		 */
 		XIic_Start(&Iic);
 		xil_printf("I2C start OK\r\n");
+		lcd_goto(0,0);
+		lcd_puts("I2C start OK");
+		lcd_puts("                ");
+		delay_ms(500);
 		XIic_SetAddress(&Iic, XII_ADDR_TO_SEND_TYPE, MPU6050_ADDRESS);
 		xil_printf("I2C address OK\r\n");
+		lcd_goto(0,0);
+		lcd_puts("I2C adress OK");
+		lcd_puts("                ");
+		delay_ms(500);
 	}
 	if(XIic_IsIicBusy(&Iic))
 	{
@@ -76,6 +97,10 @@ int MpuSensorInit(void)
 	xil_printf("MPU I2C TEST OK\r\n");
 	Setup_MPU6050();
 	xil_printf("MPU SETUP OK\r\n");
+	lcd_goto(0,0);
+	lcd_puts("MPU SETUP...");
+	lcd_puts("                ");
+	delay_ms(500);
 	Calibrate_Gyros();
 	xil_printf("Gyros calibration OK\r\n");
 
@@ -306,6 +331,10 @@ void Setup_MPU6050()
 
  
     xil_printf("MPU6050 Setup Complete\r\n");
+    lcd_goto(0,0);
+    lcd_puts("MPU Setup OK");
+    lcd_puts("                ");
+	delay_ms(500);
 }
 
 
@@ -319,24 +348,24 @@ void Calibrate_Gyros()
 	for(x = 0; x<1000; x++)
 	{
 		registre_que_volem_llegir = MPU6050_GYRO_XOUT_H;
-	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
 	    XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_XOUT_H, 1, XIIC_STOP);
 		registre_que_volem_llegir = MPU6050_GYRO_XOUT_L;
-	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
 	    XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_XOUT_L, 1, XIIC_STOP);
 
 		registre_que_volem_llegir = MPU6050_GYRO_YOUT_H;
-	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
 	    XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_YOUT_H, 1, XIIC_STOP);
 		registre_que_volem_llegir = MPU6050_GYRO_YOUT_L;
-	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
 	    XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_YOUT_L, 1, XIIC_STOP);
 
 		registre_que_volem_llegir = MPU6050_GYRO_ZOUT_H;
-	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
 	    XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_ZOUT_H, 1, XIIC_STOP);
 		registre_que_volem_llegir = MPU6050_GYRO_ZOUT_L;
-	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+	    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
 	    XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_ZOUT_L, 1, XIIC_STOP);
  
 		GYRO_XOUT_OFFSET_1000SUM += ((GYRO_XOUT_H<<8)|GYRO_XOUT_L);
@@ -361,32 +390,32 @@ void Get_Accel_Values()
 	u8 registre_que_volem_llegir = 0;
 
 	registre_que_volem_llegir = MPU6050_ACCEL_XOUT_H;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &ACCEL_XOUT_H, 1, XIIC_STOP);
 	registre_que_volem_llegir = MPU6050_ACCEL_XOUT_L;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &ACCEL_XOUT_L, 1, XIIC_STOP);
 
 	registre_que_volem_llegir = MPU6050_ACCEL_YOUT_H;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &ACCEL_YOUT_H, 1, XIIC_STOP);
 	registre_que_volem_llegir = MPU6050_ACCEL_YOUT_L;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &ACCEL_YOUT_L, 1, XIIC_STOP);
 
 	registre_que_volem_llegir = MPU6050_ACCEL_ZOUT_H;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &ACCEL_ZOUT_H, 1, XIIC_STOP);
 	registre_que_volem_llegir = MPU6050_ACCEL_ZOUT_L;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &ACCEL_ZOUT_L, 1, XIIC_STOP);
  
 	ACCEL_XOUT = ((ACCEL_XOUT_H<<8)|ACCEL_XOUT_L);
 	ACCEL_YOUT = ((ACCEL_YOUT_H<<8)|ACCEL_YOUT_L);
 	ACCEL_ZOUT = ((ACCEL_ZOUT_H<<8)|ACCEL_ZOUT_L);
-	xil_printf("Accel X: %f\r\n", ACCEL_XOUT);
-	xil_printf("Accel Y: %f\r\n", ACCEL_YOUT);
-	xil_printf("Accel Z: %f\r\n", ACCEL_ZOUT);
+	/*xil_printf("Accel X: %f\r\n", (float) ACCEL_XOUT);
+	xil_printf("Accel Y: %f\r\n", (float) ACCEL_YOUT);
+	xil_printf("Accel Z: %f\r\n", (float) ACCEL_ZOUT);*/
 }	
  
 //Converts the already acquired accelerometer data into 3D euler angles
@@ -394,8 +423,7 @@ void Get_Accel_Angles()
 {
 	ACCEL_XANGLE = 57.295*atan((float)ACCEL_YOUT/ sqrt(pow((float)ACCEL_ZOUT,2)+pow((float)ACCEL_XOUT,2)));
 	ACCEL_YANGLE = 57.295*atan((float)-ACCEL_XOUT/ sqrt(pow((float)ACCEL_ZOUT,2)+pow((float)ACCEL_YOUT,2)));	
-	xil_printf("Angle X: %f\r\n", ACCEL_XANGLE);
-	xil_printf("Angle Y: %f\r\n", ACCEL_YANGLE);
+	//xil_printf("Angle X: %d\tAngle Y: %d\r", (int) ACCEL_XANGLE, (int) ACCEL_YANGLE);
 }	
  
 //Function to read the gyroscope rate data and convert it into degrees/s
@@ -406,24 +434,24 @@ void Get_GyroRates()
 	u16 GYRO_XOUT, GYRO_YOUT, GYRO_ZOUT;
 
 	registre_que_volem_llegir = MPU6050_GYRO_XOUT_H;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_XOUT_H, 1, XIIC_STOP);
 	registre_que_volem_llegir = MPU6050_GYRO_XOUT_L;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_XOUT_L, 1, XIIC_STOP);
 
 	registre_que_volem_llegir = MPU6050_GYRO_YOUT_H;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_YOUT_H, 1, XIIC_STOP);
 	registre_que_volem_llegir = MPU6050_GYRO_YOUT_L;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_YOUT_L, 1, XIIC_STOP);
 
 	registre_que_volem_llegir = MPU6050_GYRO_ZOUT_H;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_ZOUT_H, 1, XIIC_STOP);
 	registre_que_volem_llegir = MPU6050_GYRO_ZOUT_L;
-    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_REPEATED_START);
+    XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
     XIic_Recv(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &GYRO_ZOUT_L, 1, XIIC_STOP);
  
 	GYRO_XOUT = ((GYRO_XOUT_H<<8)|GYRO_XOUT_L) - GYRO_XOUT_OFFSET;
@@ -434,7 +462,7 @@ void Get_GyroRates()
 	GYRO_YRATE = (float)GYRO_YOUT/gyro_ysensitivity;
 	GYRO_ZRATE = (float)GYRO_ZOUT/gyro_zsensitivity;
 
-	xil_printf("Gyro X rate: %f\r\n", GYRO_XRATE);
-	xil_printf("Gyro Y rate: %f\r\n", GYRO_YRATE);
-	xil_printf("Gyro Z rate: %f\r\n", GYRO_ZRATE);
+	/*xil_printf("Gyro X rate: %4.1f\r\n", (float) GYRO_XRATE);
+	xil_printf("Gyro Y rate: %f\r\n", (float) GYRO_YRATE);
+	xil_printf("Gyro Z rate: %f\r\n", (float) GYRO_ZRATE);*/
 }

@@ -189,8 +189,17 @@ implementation netlist
 IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
 C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 48 - Copying cache
 implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
+C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 55 - Copying cache
+implementation netlist
 IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
 C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 64 - Copying cache
+implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
+C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 71 - Copying cache
+implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 80 - Copying cache
 implementation netlist
 IPNAME:microblaze INSTANCE:microblaze_0 -
 C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 87 - Copying cache
@@ -243,12 +252,6 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:microblaze_0_i_bram_ctrl -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 55 - Running XST synthesis
-INSTANCE:microblaze_0_d_bram_ctrl -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 71 - Running XST synthesis
-INSTANCE:microblaze_0_bram_block -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 80 - Running XST synthesis
 INSTANCE:clock_generator_0 - C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line
 125 - Running XST synthesis
 
@@ -261,4 +264,4 @@ INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
 
 Rebuilding cache ...
 
-Total run time: 78.00 seconds
+Total run time: 29.00 seconds
