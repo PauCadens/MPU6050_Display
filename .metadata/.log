@@ -1,0 +1,12 @@
+!SESSION 2016-11-21 20:31:43.589 -----------------------------------------------
+eclipse.buildId=Release 14.7 Build SDK_P.20131013
+java.version=1.6.0_21
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=es_ES
+Command-line arguments:  -data C:\Users\a7501163\Desktop\SDAV\Pau_MPU6050 -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-11-21 20:32:13.496
+!MESSAGE Indexed 'mpu6050_bsp' (69 sources, 103 headers) in 1,69 sec: 2.840 declarations; 14.355 references; 34 unresolved inclusions; 12 syntax errors; 88 unresolved names (0,51%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-11-21 20:32:14.465
+!MESSAGE Indexed 'mpu6050' (3 sources, 36 headers) in 0,96 sec: 1.661 declarations; 1.801 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00%)

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="system.bit" key="mpu6050_hw_platform-bitFile"/>
+	<item value="system_bd.bmm" key="mpu6050_hw_platform-bmmFile"/>
+	<item value="C:\Users\a7501163\Desktop\SDAV\Pau_MPU6050\SDK\SDK_Export\mpu6050\Debug\mpu6050.elf" key="mpu6050_hw_platform-microblaze_0-initElf"/>
+</section>

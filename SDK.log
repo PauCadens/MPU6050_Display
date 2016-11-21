@@ -1,0 +1,14 @@
+20:44:09.817 ERROR - FPGA Configuration failed.Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+20:44:29.618 INFO  - FPGA configured successfully with bitstream "C:/Users/a7501163/Desktop/SDAV/Pau_MPU6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:46:23.625 INFO  - FPGA configured successfully with bitstream "C:/Users/a7501163/Desktop/SDAV/Pau_MPU6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:46:32.253 INFO  - FPGA configured successfully with bitstream "C:/Users/a7501163/Desktop/SDAV/Pau_MPU6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:50:47.222 INFO  - FPGA configured successfully with bitstream "C:/Users/a7501163/Desktop/SDAV/Pau_MPU6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+20:53:24.066 INFO  - FPGA configured successfully with bitstream "C:/Users/a7501163/Desktop/SDAV/Pau_MPU6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+21:03:41.646 INFO  - FPGA configured successfully with bitstream "C:/Users/a7501163/Desktop/SDAV/Pau_MPU6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+21:05:19.652 INFO  - FPGA configured successfully with bitstream "C:/Users/a7501163/Desktop/SDAV/Pau_MPU6050/SDK/SDK_Export/mpu6050_hw_platform/download.bit" 
+21:09:47.247 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

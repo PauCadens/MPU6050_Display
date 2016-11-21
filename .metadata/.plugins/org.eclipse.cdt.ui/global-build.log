@@ -1,0 +1,444 @@
+20:32:12 **** Build of project mpu6050_bsp ****
+make -k all 
+libgen -hw ../mpu6050_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../mpu6050_hw_platform/system.xml -pe microblaze_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.c  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling iic"
+"Compiling bram"
+"Compiling intc"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+20:32:46 **** Clean-only build of configuration Debug for project mpu6050 ****
+make clean 
+rm -rf  ./src/display.o ./src/main.o ./src/mpu6050.o  ./src/display.d ./src/main.d ./src/mpu6050.d  mpu6050.elf.size  mpu6050.elf.elfcheck  mpu6050.elf
+' '
+20:32:46 **** Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/display.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/display.d" -MT"src/display.d" -o "src/display.o" "../src/display.c"
+'Finished building: ../src/display.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu6050_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30828	    456	  33012	  64296	   fb28	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0
+mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:39:15 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c:15:1: error: unknown type name 'int16_t'
+../src/mpu6050.c:16:1: error: unknown type name 'int16_t'
+../src/mpu6050.c:17:1: error: unknown type name 'int16_t'
+../src/mpu6050.c:18:1: error: unknown type name 'int16_t'
+../src/mpu6050.c:19:1: error: unknown type name 'int16_t'
+../src/mpu6050.c:20:1: error: unknown type name 'int16_t'
+../src/mpu6050.c: In function 'Get_Accel_Values':
+../src/mpu6050.c:129:21: error: 'ACCEL_XOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:129:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/mpu6050.c:129:36: error: 'ACCEL_YOUT_H' undeclared (first use in this function)
+../src/mpu6050.c:129:51: error: 'ACCEL_YOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:129:66: error: 'ACCEL_ZOUT_H' undeclared (first use in this function)
+../src/mpu6050.c:129:81: error: 'ACCEL_ZOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:137:5: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [enabled by default]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'int *'
+make: *** [src/mpu6050.o] Error 1
+20:39:54 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:23:1: error: unknown type name 'int16_t'
+make: *** [src/main.o] Error 1
+20:40:42 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:23:1: error: unknown type name 'int16_t'
+make: *** [src/main.o] Error 1
+20:40:45 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c:15:1: error: unknown type name 'int16_t'
+../src/mpu6050.c:16:1: error: unknown type name 'int16_t'
+../src/mpu6050.c:17:1: error: unknown type name 'int16_t'
+../src/mpu6050.c:18:1: error: unknown type name 'int16_t'
+../src/mpu6050.c:19:1: error: unknown type name 'int16_t'
+../src/mpu6050.c:20:1: error: unknown type name 'int16_t'
+../src/mpu6050.c: In function 'Get_Accel_Values':
+../src/mpu6050.c:129:21: error: 'ACCEL_XOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:129:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/mpu6050.c:129:36: error: 'ACCEL_YOUT_H' undeclared (first use in this function)
+../src/mpu6050.c:129:51: error: 'ACCEL_YOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:129:66: error: 'ACCEL_ZOUT_H' undeclared (first use in this function)
+../src/mpu6050.c:129:81: error: 'ACCEL_ZOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:137:5: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [enabled by default]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'int *'
+make: *** [src/mpu6050.o] Error 1
+20:40:50 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c: In function 'Get_Accel_Values':
+../src/mpu6050.c:129:21: error: 'ACCEL_XOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:129:21: note: each undeclared identifier is reported only once for each function it appears in
+../src/mpu6050.c:129:36: error: 'ACCEL_YOUT_H' undeclared (first use in this function)
+../src/mpu6050.c:129:51: error: 'ACCEL_YOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:129:66: error: 'ACCEL_ZOUT_H' undeclared (first use in this function)
+../src/mpu6050.c:129:81: error: 'ACCEL_ZOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:137:5: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [enabled by default]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'int *'
+make: *** [src/mpu6050.o] Error 1
+20:40:56 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c: In function 'Get_Accel_Values':
+../src/mpu6050.c:129:24: error: 'ACCEL_XOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:129:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/mpu6050.c:129:39: error: 'ACCEL_YOUT_H' undeclared (first use in this function)
+../src/mpu6050.c:129:54: error: 'ACCEL_YOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:129:69: error: 'ACCEL_ZOUT_H' undeclared (first use in this function)
+../src/mpu6050.c:129:84: error: 'ACCEL_ZOUT_L' undeclared (first use in this function)
+../src/mpu6050.c:137:5: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [enabled by default]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint16 *'
+make: *** [src/mpu6050.o] Error 1
+20:41:41 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c: In function 'Get_Accel_Values':
+../src/mpu6050.c:142:5: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [enabled by default]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint16 *'
+../src/mpu6050.c:145:5: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [enabled by default]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint16 *'
+../src/mpu6050.c:149:5: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [enabled by default]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint16 *'
+../src/mpu6050.c:152:5: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [enabled by default]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint16 *'
+../src/mpu6050.c:156:5: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [enabled by default]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint16 *'
+../src/mpu6050.c:159:5: warning: passing argument 3 of 'XIic_Recv' from incompatible pointer type [enabled by default]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint16 *'
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu6050_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30924	    456	  33004	  64384	   fb80	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0
+mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:42:17 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c: In function 'Get_Accel_Values':
+../src/mpu6050.c:142:5: warning: pointer targets in passing argument 3 of 'XIic_Recv' differ in signedness [-Wpointer-sign]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint8 *'
+../src/mpu6050.c:145:5: warning: pointer targets in passing argument 3 of 'XIic_Recv' differ in signedness [-Wpointer-sign]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint8 *'
+../src/mpu6050.c:149:5: warning: pointer targets in passing argument 3 of 'XIic_Recv' differ in signedness [-Wpointer-sign]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint8 *'
+../src/mpu6050.c:152:5: warning: pointer targets in passing argument 3 of 'XIic_Recv' differ in signedness [-Wpointer-sign]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint8 *'
+../src/mpu6050.c:156:5: warning: pointer targets in passing argument 3 of 'XIic_Recv' differ in signedness [-Wpointer-sign]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint8 *'
+../src/mpu6050.c:159:5: warning: pointer targets in passing argument 3 of 'XIic_Recv' differ in signedness [-Wpointer-sign]
+../../mpu6050_bsp/microblaze_0/include/xiic_l.h:579:10: note: expected 'u8 *' but argument is of type 'Xint8 *'
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu6050_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30932	    456	  33004	  64392	   fb88	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0
+mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:42:32 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu6050_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30912	    456	  33000	  64368	   fb70	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0
+mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:44:30 **** Auto Build of project mpu6050_bsp ****
+make -k all 
+'Finished building libraries'
+20:46:24 **** Auto Build of project mpu6050_bsp ****
+make -k all 
+'Finished building libraries'
+20:46:33 **** Auto Build of project mpu6050_bsp ****
+make -k all 
+'Finished building libraries'
+20:50:39 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu6050_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30972	    456	  33004	  64432	   fbb0	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0
+mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:50:48 **** Auto Build of project mpu6050_bsp ****
+make -k all 
+'Finished building libraries'
+20:53:15 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu6050_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30412	    456	  33004	  63872	   f980	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0
+mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:53:25 **** Auto Build of project mpu6050_bsp ****
+make -k all 
+'Finished building libraries'
+21:03:33 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu6050_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30216	    456	  33000	  63672	   f8b8	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0
+mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:03:42 **** Auto Build of project mpu6050_bsp ****
+make -k all 
+'Finished building libraries'
+21:05:12 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O3 -g3 -c -fmessage-length=0 -I../../mpu6050_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu6050_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29620	    456	  33004	  63080	   f668	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0
+mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:05:20 **** Auto Build of project mpu6050_bsp ****
+make -k all 
+'Finished building libraries'
