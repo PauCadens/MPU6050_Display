@@ -12,12 +12,12 @@
 XIic Iic;
 XIic_Config * ConfigPtr;
 
-int GYRO_XOUT_OFFSET = 0;
-int GYRO_YOUT_OFFSET = 0;
-int GYRO_ZOUT_OFFSET = 0;
-int ACCEL_XOUT = 0;
-int ACCEL_YOUT = 0;
-int ACCEL_ZOUT = 0;
+Xint16 GYRO_XOUT_OFFSET = 0;
+Xint16 GYRO_YOUT_OFFSET = 0;
+Xint16 GYRO_ZOUT_OFFSET = 0;
+Xint16 ACCEL_XOUT = 0;
+Xint16 ACCEL_YOUT = 0;
+Xint16 ACCEL_ZOUT = 0;
 float ACCEL_XANGLE = 0;
 float ACCEL_YANGLE = 0;
 float GYRO_XRATE = 0;
@@ -96,7 +96,7 @@ int MpuSensorInit(void)
 	lcd_goto(0,0);
 	lcd_puts("MPU SETUP...");
 	lcd_puts("                ");
-	delay_ms(500);
+	delay_ms(50);
 
 	return Status;
 }
@@ -126,11 +126,13 @@ void MPU6050_Test_I2C()
 //Gets raw accelerometer data, performs no processing
 void Get_Accel_Values()
 {
-	u8 ACCEL_XOUT_H, ACCEL_XOUT_L, ACCEL_YOUT_H, ACCEL_YOUT_L, ACCEL_ZOUT_H, ACCEL_ZOUT_L;
+	Xuint8 ACCEL_XOUT_H = 0;
+	Xuint8 ACCEL_XOUT_L = 0;
+	Xuint8 ACCEL_YOUT_H = 0;
+	Xuint8 ACCEL_YOUT_L = 0;
+	Xuint8 ACCEL_ZOUT_H = 0;
+	Xuint8 ACCEL_ZOUT_L = 0;
 	u8 registre_que_volem_llegir = 0;
-
-
-	MPU6050_Test_I2C();
 
 	registre_que_volem_llegir = MPU6050_ACCEL_XOUT_H;
     XIic_Send(ConfigPtr->BaseAddress, MPU6050_ADDRESS, &registre_que_volem_llegir, 1, XIIC_STOP);
@@ -158,38 +160,34 @@ void Get_Accel_Values()
 	ACCEL_ZOUT = ((ACCEL_ZOUT_H<<8)|ACCEL_ZOUT_L) & 0xFFFF;
 
 	
-	xil_printf("RAW Accel X: %d\r\n", ACCEL_XOUT);
-	xil_printf("RAW Accel Y: %d\r\n", ACCEL_YOUT);
-	xil_printf("RAW Accel Z: %d\r\n", ACCEL_ZOUT);
+	//xil_printf("RAW Accel X: %d\r\n", ACCEL_XOUT);
+	//xil_printf("RAW Accel Y: %d\r\n", ACCEL_YOUT);
+	//xil_printf("RAW Accel Z: %d\r\n", ACCEL_ZOUT);
 }	
  
 //Converts the already acquired accelerometer data into 3D euler angles
 void Get_Accel_Angles()
 {
-	/*Acc[0] = atan((AcY/A_R)/sqrt(pow((AcX/A_R),2) + pow((AcZ/A_R),2)))*RAD_TO_DEG;     x
-	 *Acc[1] = atan(-1*(AcX/A_R)/sqrt(pow((AcY/A_R),2) + pow((AcZ/A_R),2)))*RAD_TO_DEG;  y
- 	   	   	   	   	   	   	   	   	   	   	   	   	   	   	   	   	   	   	   	   	   	   	   */
+	/*
+		Acc[0] = atan((AcY/A_R)/sqrt(pow((AcX/A_R),2) + pow((AcZ/A_R),2)))*RAD_TO_DEG;//x
+		Acc[1] = atan(-1*(AcX/A_R)/sqrt(pow((AcY/A_R),2) + pow((AcZ/A_R),2)))*RAD_TO_DEG;//y
+	*/
 
-	xil_printf("RAW Angle X (radians?): %d\tAngle Y: %d\r\n", atan((ACCEL_YOUT/A_R)/sqrt(pow((ACCEL_XOUT/A_R),2) + pow((ACCEL_ZOUT/A_R),2))), atan(-1*(ACCEL_XOUT/A_R)/sqrt(pow((ACCEL_YOUT/A_R),2) + pow((ACCEL_ZOUT/A_R),2))));
-
-	ACCEL_XANGLE = atan((ACCEL_YOUT/A_R)/sqrt(pow((ACCEL_XOUT/A_R),2) + pow((ACCEL_ZOUT/A_R),2)))*RAD_TO_DEG;
-	ACCEL_YANGLE = atan(-1*(ACCEL_XOUT/A_R)/sqrt(pow((ACCEL_YOUT/A_R),2) + pow((ACCEL_ZOUT/A_R),2)))*RAD_TO_DEG;
+	ACCEL_XANGLE = atan(((float) ((ACCEL_YOUT*1.0f)/(A_R*1.0f)))/sqrt(pow((float)((ACCEL_XOUT*1.0f)/(A_R*1.0f)),2) + pow((float) ((ACCEL_ZOUT*1.0f)/(A_R*1.0f)),2)))*RAD_TO_DEG;
+	ACCEL_YANGLE = atan(-1.0f*((float) ((ACCEL_XOUT*1.0f)/(A_R*1.0f)))/sqrt(pow((float) ((ACCEL_YOUT*1.0f)/(A_R*1.0f)),2) + pow((float) ((ACCEL_ZOUT*1.0f)/(A_R*1.0f)),2)))*RAD_TO_DEG;
 	/*
 	ACCEL_XANGLE = 57.295*atan((float)ACCEL_YOUT/ sqrt(pow((float)ACCEL_ZOUT,2)+pow((float)ACCEL_XOUT,2)));
 	ACCEL_YANGLE = 57.295*atan((float)-ACCEL_XOUT/ sqrt(pow((float)ACCEL_ZOUT,2)+pow((float)ACCEL_YOUT,2)));*/
-	xil_printf("RAW Angle X: %d\tAngle Y: %d\r\n", (int) ACCEL_XANGLE, (int) ACCEL_YANGLE);
+	//xil_printf("RAW Angle X: %d\tAngle Y: %d\r\n", (int) ACCEL_XANGLE, (int) ACCEL_YANGLE);
 }	
  
 //Function to read the gyroscope rate data and convert it into degrees/s
 void Get_GyroRates(u16 * data)
 {
-	//u8 GYRO_XOUT_H, GYRO_XOUT_L, GYRO_YOUT_H, GYRO_YOUT_L, GYRO_ZOUT_H, GYRO_ZOUT_L;
-	//u8 registre_que_volem_llegir = 0;
-	//u16 GYRO/_XOUT, GYRO_YOUT, GYRO_ZOUT;
-	u8 GYROS_OUT_XYZ_HL[6] = {0};
-	u16 GYROS_OUT_XYZ[3] = {0};
-	u8 registre_que_volem_llegir[6] = {MPU6050_GYRO_XOUT_H, MPU6050_GYRO_XOUT_L, MPU6050_GYRO_YOUT_H, MPU6050_GYRO_YOUT_L, MPU6050_GYRO_ZOUT_H, MPU6050_GYRO_ZOUT_L};
-	u8 i = 0;
+	Xuint8 GYROS_OUT_XYZ_HL[6] = {0};
+	Xint16 GYROS_OUT_XYZ[3] = {0};
+	Xuint8 registre_que_volem_llegir[6] = {MPU6050_GYRO_XOUT_H, MPU6050_GYRO_XOUT_L, MPU6050_GYRO_YOUT_H, MPU6050_GYRO_YOUT_L, MPU6050_GYRO_ZOUT_H, MPU6050_GYRO_ZOUT_L};
+	Xuint8 i = 0;
 	
 
 	for(i = 0; i < 3; i++)
@@ -205,9 +203,9 @@ void Get_GyroRates(u16 * data)
 	GYROS_OUT_XYZ[1] = ((GYROS_OUT_XYZ_HL[2]<<8)|GYROS_OUT_XYZ_HL[3]) - GYRO_YOUT_OFFSET;
 	GYROS_OUT_XYZ[2] = ((GYROS_OUT_XYZ_HL[4]<<8)|GYROS_OUT_XYZ_HL[5]) - GYRO_ZOUT_OFFSET;
 
-	xil_printf("RAW Gyro X: %d\r\n", GYROS_OUT_XYZ[0]);
-	xil_printf("RAW Gyro Y: %d\r\n", GYROS_OUT_XYZ[1]);
-	xil_printf("RAW Gyro Z: %d\r\n", GYROS_OUT_XYZ[2]);
+	//xil_printf("RAW Gyro X: %d\r\n", GYROS_OUT_XYZ[0]);
+	//xil_printf("RAW Gyro Y: %d\r\n", GYROS_OUT_XYZ[1]);
+	//xil_printf("RAW Gyro Z: %d\r\n", GYROS_OUT_XYZ[2]);
 
 	data[0] = GYROS_OUT_XYZ[0];
 	data[1] = GYROS_OUT_XYZ[1];
@@ -217,9 +215,9 @@ void Get_GyroRates(u16 * data)
 	GYRO_YRATE = (float)GYROS_OUT_XYZ[1]/G_R;
 	GYRO_ZRATE = (float)GYROS_OUT_XYZ[2]/G_R;
 
-	xil_printf("RAW Gyro Rate X: %d\r\n", (int) GYRO_XRATE);
-	xil_printf("RAW Gyro Rate Y: %d\r\n", (int) GYRO_YRATE);
-	xil_printf("RAW Gyro Rate Z: %d\r\n", (int) GYRO_ZRATE);
+	//xil_printf("RAW Gyro Rate X: %d\r\n", (int) GYRO_XRATE);
+	//xil_printf("RAW Gyro Rate Y: %d\r\n", (int) GYRO_YRATE);
+	//xil_printf("RAW Gyro Rate Z: %d\r\n", (int) GYRO_ZRATE);
 }
 
 void filtre(void)

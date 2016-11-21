@@ -20,9 +20,9 @@ extern float ACCEL_ZANGLE;
 extern float GYRO_XRATE;
 extern float GYRO_YRATE;
 extern float GYRO_ZRATE;
-extern u16 ACCEL_XOUT;
-extern u16 ACCEL_YOUT;
-extern u16 ACCEL_ZOUT;
+extern Xint16 ACCEL_XOUT;
+extern Xint16 ACCEL_YOUT;
+extern Xint16 ACCEL_ZOUT;
 u16 data[3] = {0};
 
 char fila1[17] = {'X', ':', '\0', '\0', '\0', '\0', '\0', 34, '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0'};
