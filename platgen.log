@@ -11,7 +11,7 @@ Read MPD definitions ...
 
 Overriding IP level properties ...
 INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:microblaze_0_intc - tcl is overriding
-   PARAMETER C_NUM_INTR_INPUTS value to 4 -
+   PARAMETER C_NUM_INTR_INPUTS value to 3 -
    C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
    a\axi_intc_v2_1_0.mpd line 85 
 INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
@@ -43,12 +43,11 @@ Performing IP level DRCs on properties...
 
 Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
 Address Map for Processor microblaze_0
-  (0000000000-0x0000ffff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
-  (0000000000-0x0000ffff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
-  (0x40000000-0x4000ffff) LEDs	axi4lite_0
-  (0x40040000-0x4004ffff) Display16x2	axi4lite_0
-  (0x40600000-0x4060ffff) USB_Uart	axi4lite_0
-  (0x40800000-0x4080ffff) I2C	axi4lite_0
+  (0000000000-0x0001ffff) microblaze_0_d_bram_ctrl	microblaze_0_dlmb
+  (0000000000-0x0001ffff) microblaze_0_i_bram_ctrl	microblaze_0_ilmb
+  (0x40040000-0x40040fff) Display16x2	axi4lite_0
+  (0x40600000-0x40603fff) USB_Uart	axi4lite_0
+  (0x40800000-0x40800fff) I2C	axi4lite_0
   (0x41200000-0x4120ffff) microblaze_0_intc	axi4lite_0
   (0x41400000-0x4140ffff) debug_module	axi4lite_0
   (0x41c00000-0x41c0ffff) axi_timer_0	axi4lite_0
@@ -61,207 +60,51 @@ INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_dlmb - tool is overriding
    C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2_00_b\data
    \lmb_v10_v2_1_0.mpd line 82 
 INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:microblaze_0_bram_block - tool is
-   overriding PARAMETER C_MEMSIZE value to 0x10000 -
+   overriding PARAMETER C_MEMSIZE value to 0x20000 -
    C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block_v1_00_a\d
    ata\bram_block_v2_1_0.mpd line 78 
 
 Checking platform address map ...
 
 Checking platform configuration ...
+ERROR:EDK:4098 - IPNAME: bram_block, INSTANCE: microblaze_0_bram_block - Memory
+   of data width 32-bit and memory size 128-kBytes does not fit in a fixed size.
+    
+   Only the following memory configurations are supported:
+   -----------------------------------------------------------------------
+                   |    Memory (kBytes)        |    Memory (kBytes)      |
+     Architecture  |      32-bit data          |      64-bit data        |
+                   |      byte-write           |      byte-write         |
+   -----------------------------------------------------------------------
+   Spartan-3       |      8 16 32 64           |      16 32 64 128       |
+   Spartan-3A      |    2 4 8 16 32 64         |    4 8 16 32 64 128     |
+   Spartan-3ADSP   |    2 4 8 16 32 64         |    4 8 16 32 64 128     |
+   Spartan-3E      |      8 16 32 64           |      16 32 64 128       |
+   Spartan-6       |    2 4 8 16 32 64         |    4 8 16 32 64 128     |
+   Virtex-4        |  2 4 8 16 32 64 128       |  4 8 16 32 64 128 256   |
+   Virtex-5        | 4 8 16 32 64 128 256      | 8 16 32 64 128 256 512  |
+   Virtex-6        | 4 8 16 32 64 128 256      | 8 16 32 64 128 256 512  |
+   Virtex-7        | 4 8 16 32 64 128 256      | 8 16 32 64 128 256 512  |
+   Kintex-7        | 4 8 16 32 64 128 256      | 8 16 32 64 128 256 512  |
+   -----------------------------------------------------------------------
+                   |    Memory (kBytes)        |
+     Architecture  |     128-bit data          |
+                   |      byte-write           |
+   ---------------------------------------------
+   Spartan-3       |          ------           |
+   Spartan-3A      |          ------           |
+   Spartan-3ADSP   |          ------           |
+   Spartan-3E      |          ------           |
+   Spartan-6       |     8 16 32 64 128 256    |
+   Virtex-4        |          ------           |
+   Virtex-5        |          ------           |
+   Virtex-6        | 16 32 64 128 256 512 1024 |
+   Virtex-7        | 16 32 64 128 256 512 1024 |
+   Kintex-7        | 16 32 64 128 256 512 1024 |
+   ---------------------------------------------
+
+    - C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 79 
 IPNAME: lmb_v10, INSTANCE: microblaze_0_ilmb - 1 master(s) : 1 slave(s) 
 IPNAME: lmb_v10, INSTANCE: microblaze_0_dlmb - 1 master(s) : 1 slave(s) 
-IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 7 slave(s) 
-
-Checking port drivers...
-WARNING:EDK:4180 - PORT: Interrupt_address_in, CONNECTOR: Interrupt_address_in -
-   No driver found. Port will be driven to GND -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
-   a\axi_intc_v2_1_0.mpd line 131 
-WARNING:EDK:4181 - PORT: Processor_ack_out, CONNECTOR: Processor_ack_out -
-   floating connection -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
-   a\axi_intc_v2_1_0.mpd line 132 
-
-Performing Clock DRCs...
-
-Performing Reset DRCs...
-
-Overriding system level properties...
-INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:microblaze_0_intc - tcl is overriding
-   PARAMETER C_KIND_OF_INTR value to 0b11111111111111111111111111111000 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
-   a\axi_intc_v2_1_0.mpd line 87 
-INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:microblaze_0_intc - tcl is overriding
-   PARAMETER C_KIND_OF_EDGE value to 0b11111111111111111111111111111111 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
-   a\axi_intc_v2_1_0.mpd line 88 
-INFO:EDK:4130 - IPNAME: axi_intc, INSTANCE:microblaze_0_intc - tcl is overriding
-   PARAMETER C_KIND_OF_LVL value to 0b11111111111111111111111111111111 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_intc_v1_04_a\dat
-   a\axi_intc_v2_1_0.mpd line 89 
-INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_i_bram_ctrl -
-   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
-   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
-INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:microblaze_0_d_bram_ctrl -
-   tcl is overriding PARAMETER C_MASK value to 0x40000000 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_if_cntlr_v3
-   _10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
-INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
-   PARAMETER C_D_AXI value to 1 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
-   ata\microblaze_v2_1_0.mpd line 232 
-INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
-   PARAMETER C_ADDR_TAG_BITS value to 0 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
-   ata\microblaze_v2_1_0.mpd line 337 
-INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
-   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
-   ata\microblaze_v2_1_0.mpd line 367 
-INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
-   PARAMETER C_USE_INTERRUPT value to 1 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
-   ata\microblaze_v2_1_0.mpd line 401 
-INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
-   PARAMETER C_USE_EXT_BRK value to 1 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
-   ata\microblaze_v2_1_0.mpd line 402 
-INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
-   PARAMETER C_USE_EXT_NM_BRK value to 1 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze_v8_50_c\d
-   ata\microblaze_v2_1_0.mpd line 403 
-
-INFO: Setting C_RANGE_CHECK = ON for axi_interconnect axi4lite_0.
-INFO:EDK:4130 - IPNAME: axi_interconnect, INSTANCE:axi4lite_0 - tcl is
-   overriding PARAMETER C_RANGE_CHECK value to 1 -
-   C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_
-   06_a\data\axi_interconnect_v2_1_0.mpd line 149 
-
-Running system level update procedures...
-
-Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
-
-Running system level DRCs...
-
-Performing System level DRCs on properties...
-
-Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
-INTC INFO:: Processor_clk not connected. IRQ is generated on AXI clock.
-
-Running UPDATE Tcl procedures for OPTION PLATGEN_SYSLEVEL_UPDATE_PROC...
-INTC_INFO_CONSTRAINTS:: Adding Edge interrupt constraints
-INFO: Setting timing constaints for microblaze_0_ilmb.
-INFO: The microblaze_0_ilmb core has constraints automatically generated by XPS
-in implementation/microblaze_0_ilmb_wrapper/microblaze_0_ilmb_wrapper.ucf.
-It can be overridden by constraints placed in the system.ucf file.
-
-INFO: Setting timing constaints for microblaze_0_dlmb.
-INFO: The microblaze_0_dlmb core has constraints automatically generated by XPS
-in implementation/microblaze_0_dlmb_wrapper/microblaze_0_dlmb_wrapper.ucf.
-It can be overridden by constraints placed in the system.ucf file.
-
-INFO: Setting timing constaints for microblaze_0.
-INFO: The microblaze_0 core has constraints automatically generated by XPS in
-implementation/microblaze_0_wrapper/microblaze_0_wrapper.ucf.
-It can be overridden by constraints placed in the system.ucf file.
-
-INFO: No asynchronous clock conversions in axi_interconnect axi4lite_0.
-
-Modify defaults ...
-
-Creating stub ...
-
-Processing licensed instances ...
-Completion time: 0.00 seconds
-
-Creating hardware output directories ...
-
-Managing hardware (BBD-specified) netlist files ...
-
-Managing cache ...
-IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 24 - Copying cache
-implementation netlist
-IPNAME:axi_intc INSTANCE:microblaze_0_intc -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 37 - Copying cache
-implementation netlist
-IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 48 - Copying cache
-implementation netlist
-IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 55 - Copying cache
-implementation netlist
-IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 64 - Copying cache
-implementation netlist
-IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 71 - Copying cache
-implementation netlist
-IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 80 - Copying cache
-implementation netlist
-IPNAME:microblaze INSTANCE:microblaze_0 -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 87 - Copying cache
-implementation netlist
-IPNAME:mdm INSTANCE:debug_module -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 112 - Copying cache
-implementation netlist
-IPNAME:axi_timer INSTANCE:axi_timer_0 -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 137 - Copying cache
-implementation netlist
-IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 149 - Copying cache
-implementation netlist
-IPNAME:axi_uartlite INSTANCE:usb_uart -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 157 - Copying cache
-implementation netlist
-IPNAME:axi_gpio INSTANCE:leds - C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs
-line 173 - Copying cache implementation netlist
-IPNAME:axi_iic INSTANCE:i2c - C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs
-line 188 - Copying cache implementation netlist
-IPNAME:axi_gpio INSTANCE:display16x2 -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 202 - Copying cache
-implementation netlist
-
-Elaborating instances ...
-IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 80 - elaborating IP
-IPNAME:clock_generator INSTANCE:clock_generator_0 -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 125 - elaborating IP
-ClkGen elaborate status: PASSED
-----------------------------------------
-----------------------------------------
-
-Writing HDL for elaborated instances ...
-
-Inserting wrapper level ...
-Completion time: 1.00 seconds
-
-Constructing platform-level connectivity ...
-Completion time: 0.00 seconds
-
-Writing (top-level) BMM ...
-
-Writing (top-level and wrappers) HDL ...
-
-Generating synthesis project file ...
-
-Running XST synthesis ...
-
-INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
-   IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
-   synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:clock_generator_0 - C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line
-125 - Running XST synthesis
-
-Running NGCBUILD ...
-IPNAME:mpu6050_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
-C:\Users\Pc\Documents\VHDL\mpu6050\mpu6050.mhs line 125 - Running NGCBUILD
-INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
-   If any constraint needs to be overridden, this should be done by modifying
-   the data/mpu6050.ucf file.
-
-Rebuilding cache ...
-
-Total run time: 29.00 seconds
+IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 6 slave(s) 
+ERROR:EDK:440 - platgen failed with errors!

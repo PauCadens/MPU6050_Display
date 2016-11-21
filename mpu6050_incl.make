@@ -75,7 +75,6 @@ implementation/mpu6050_clock_generator_0_wrapper.ngc \
 implementation/mpu6050_axi_timer_0_wrapper.ngc \
 implementation/mpu6050_axi4lite_0_wrapper.ngc \
 implementation/mpu6050_usb_uart_wrapper.ngc \
-implementation/mpu6050_leds_wrapper.ngc \
 implementation/mpu6050_i2c_wrapper.ngc \
 implementation/mpu6050_display16x2_wrapper.ngc
 

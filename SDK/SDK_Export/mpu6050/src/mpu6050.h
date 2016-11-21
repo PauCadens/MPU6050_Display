@@ -134,8 +134,9 @@ void Get_Accel_Values();
 void Get_Accel_Angles();
  
 //Function to read the gyroscope rate data and convert it into degrees/s
-void Get_GyroRates();
+//void Get_GyroRates();
+void Get_GyroRates(u16 * data);
 
 int MpuSensorInit();
 
-
+void filtre(void);
