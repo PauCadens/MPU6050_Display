@@ -6405,3 +6405,159 @@ Done writing filter settings to:
 	C:\Users\Pc\Documents\VHDL\mpu6050\etc\mpu6050.filters
 Done writing Tab View settings to:
 	C:\Users\Pc\Documents\VHDL\mpu6050\etc\mpu6050.gui
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Assigned Driver s6_ddrx 1.00.a for instance axi_s6_ddrx_0
+axi_s6_ddrx_0 has been added to the project
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: sysclk_2x - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: sysclk_2x_180 - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: pll_lock - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_addr - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_ba - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_ras_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_cas_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_we_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_cke - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_clk_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_dq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_dqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_dqs_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_udqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_udqs_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_udm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_ldm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_odt - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: rzq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: zio - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: ui_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PARAMETER: C_MEM_PARTNO - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a value in the MHS. 
+WARNING:EDK:2137 - Peripheral axi_s6_ddrx_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: sysclk_2x - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: sysclk_2x_180 - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: pll_lock - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_addr - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_ba - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_ras_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_cas_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_we_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_cke - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_clk_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_dq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_dqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_udqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_udm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: mcbx_dram_ldm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: rzq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: axi_s6_ddrx_0, PORT: ui_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+WARNING:EDK:2137 - Peripheral axi_s6_ddrx_0 is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+WARNING:EDK - Can not find interconnect instance which is connected to M_AXI_DC in microblaze_0
+WARNING:EDK - Can not find interconnect instance which is connected to M_AXI_IC in microblaze_0
+WARNING:EDK - Please connect bus interface, set up port and generate address manually
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: sysclk_2x - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: sysclk_2x_180 - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: pll_lock - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_addr - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ba - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ras_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_cas_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_we_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_cke - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_clk_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_dq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_dqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_udqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_udm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ldm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: rzq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: ui_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+WARNING:EDK:2137 - Peripheral MCB3_LPDDR is not accessible from any processor in the system. Check Bus Interface connections and address parameters. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: sysclk_2x - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: sysclk_2x_180 - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: pll_lock - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_addr - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ba - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ras_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_cas_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_we_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_cke - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_clk_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_dq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_dqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_udqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_udm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ldm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: rzq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: ui_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+Assigned Driver generic 1.00.a for instance axi_interconnect_0
+axi_interconnect_0 has been added to the project
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_0 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: sysclk_2x - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: sysclk_2x_180 - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: pll_lock - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_addr - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ba - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ras_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_cas_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_we_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_cke - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_clk_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_dq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_dqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_udqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_udm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ldm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: rzq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: ui_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_0, PORT: INTERCONNECT_ARESETN - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_0 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: sysclk_2x - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: sysclk_2x_180 - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: pll_lock - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_addr - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ba - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ras_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_cas_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_we_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_cke - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_clk_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_dq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_dqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_udqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_udm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ldm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: rzq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: ui_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_interconnect, INSTANCE: axi_interconnect_0, PORT: INTERCONNECT_ARESETN - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+axi_interconnect_0 has been deleted from the project
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: sysclk_2x - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: sysclk_2x_180 - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: pll_lock - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_addr - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ba - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ras_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_cas_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_we_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_cke - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_clk_n - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_dq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_dqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_udqs - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_udm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: mcbx_dram_ldm - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: rzq - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+ERROR:EDK:4125 - IPNAME: axi_s6_ddrx, INSTANCE: MCB3_LPDDR, PORT: ui_clk - ASSIGNMENT=REQUIRE is defined in the MPD. You must specify a connection in the MHS. 
+MCB3_LPDDR has been deleted from the project
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\Pc\Documents\VHDL\mpu6050\etc\mpu6050.filters
+Done writing Tab View settings to:
+	C:\Users\Pc\Documents\VHDL\mpu6050\etc\mpu6050.gui

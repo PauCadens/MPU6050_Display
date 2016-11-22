@@ -1,6 +1,6 @@
-20:01:53 **** Auto Build of project mpu6050_bsp ****
+17:28:24 **** Auto Build of project mpu6050_bsp ****
 make -k all 
 'Finished building libraries'
 
-20:01:54 Build Finished (took 201ms)
+17:28:24 Build Finished (took 219ms)
 

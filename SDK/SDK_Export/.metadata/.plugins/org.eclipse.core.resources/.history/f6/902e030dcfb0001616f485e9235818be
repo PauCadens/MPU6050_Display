@@ -6,7 +6,6 @@
 #include "display.h"
 #include "mpu6050.h"
 #include "stdlib.h"
-//#include "stdio.h"
 
 void getAsciiValues(float value, char * buffer);
 
@@ -29,8 +28,8 @@ u16 data[3] = {0};
 //char fila1[17] = {'X', ':', '\0', '\0', '\0', '\0', '\0', 34, '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0'};
 //char fila2[17] = {'Y', ':', '\0', '\0', '\0', '\0', '\0', 34, '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0'};
 
-char fila1[17] = {'A','N','G','L','E',' ','X',':','\0', '\0', '\0', '\0', '\0', 176, '\0', '\0', '\0',};
-char fila2[17] = {'A','N','G','L','E',' ','Y',':','\0', '\0', '\0', '\0', '\0', 176, '\0', '\0', '\0',};
+char fila1[17] = {'A','N','G','L','E',' ','X',':','\0', '\0', '\0', '\0', '\0', 34, '\0', '\0', '\0',};
+char fila2[17] = {'A','N','G','L','E',' ','Y',':','\0', '\0', '\0', '\0', '\0', 34, '\0', '\0', '\0',};
 
 // Main function
 
@@ -83,7 +82,7 @@ int main (void)
 
 	  getAsciiValues(ACCEL_XANGLE, &fila1[8]);
 	  getAsciiValues(ACCEL_YANGLE, &fila2[8]);
-	  //printf("X: %f\tY: %f\r\n", ACCEL_XANGLE, ACCEL_YANGLE);
+	  xil_printf("%s\t%s\r\n", fila1, fila2);
 
 	  lcd_goto(0,0);
 	  lcd_puts(&fila1[0]);
@@ -98,7 +97,7 @@ int main (void)
 void getAsciiValues(float value, char * buffer)
 {
 	u8 part_entera = (int) abs(value);
-	u8 part_decimal = (u8) (((float)(abs(value) - part_entera))*10.0f);
+	u8 part_decimal = (abs(value) - part_entera)*10;
 	xil_printf("decimal: %d\r\n", part_decimal);
 
 	if (value < 0)

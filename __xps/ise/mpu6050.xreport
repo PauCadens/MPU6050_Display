@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-18T16:39:03</DateModified>
+  <DateModified>2016-11-22T17:30:15</DateModified>
   <ModuleName>mpu6050</ModuleName>
-  <SummaryTimeStamp>2016-11-18T16:39:01</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-11-22T17:30:14</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Pc/Documents/VHDL/mpu6050/__xps/ise/mpu6050.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
   <SavedFilterFilePath>C:/Users/Pc/Documents/VHDL/mpu6050/__xps/ise</SavedFilterFilePath>
