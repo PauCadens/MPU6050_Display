@@ -227,8 +227,7 @@ void filtre(void)
 	Angle[1] = 0.98 *(Angle[1]+Gy[1]*0.010) + 0.02*Acc[1];
 	*/
 
-	ACCEL_XANGLE = 0.98 * (ACCEL_XANGLE + GYRO_XRATE * 0.01) + 0.02 * (ACCEL_XOUT/A_R);
-	ACCEL_YANGLE = 0.98 * (ACCEL_YANGLE + GYRO_YRATE * 0.01) + 0.02 * (ACCEL_YOUT/A_R);
+	ACCEL_XANGLE = 0.99 * (ACCEL_XANGLE + GYRO_XRATE * 0.05) + 0.01 * (ACCEL_XOUT/A_R);
+	ACCEL_YANGLE = 0.99 * (ACCEL_YANGLE + GYRO_YRATE * 0.05) + 0.01 * (ACCEL_YOUT/A_R);
 	//xil_printf("Filtrades Angle X: %d.%d\tAngle Y: %d\r\n", (int)ACCEL_XANGLE, (int)((ACCEL_XANGLE - ((int)ACCEL_XANGLE))*10), (int)ACCEL_YANGLE);
-	xil_printf("Filtrades Angle X: %5.1f\r\n", ACCEL_XANGLE);
 }

@@ -6,7 +6,7 @@
 #include "display.h"
 #include "mpu6050.h"
 #include "stdlib.h"
-//#include "stdio.h"
+#include "stdio.h"
 
 void getAsciiValues(float value, char * buffer);
 
@@ -29,8 +29,8 @@ u16 data[3] = {0};
 //char fila1[17] = {'X', ':', '\0', '\0', '\0', '\0', '\0', 34, '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0'};
 //char fila2[17] = {'Y', ':', '\0', '\0', '\0', '\0', '\0', 34, '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0'};
 
-char fila1[17] = {'A','N','G','L','E',' ','X',':','\0', '\0', '\0', '\0', '\0', 176, '\0', '\0', '\0',};
-char fila2[17] = {'A','N','G','L','E',' ','Y',':','\0', '\0', '\0', '\0', '\0', 176, '\0', '\0', '\0',};
+char fila1[17] = {'A','N','G','L','E',' ','X',':','\0', '\0', '\0', '\0', '\0', 'º', '\0', '\0', '\0',};
+char fila2[17] = {'A','N','G','L','E',' ','Y',':','\0', '\0', '\0', '\0', '\0', 'º', '\0', '\0', '\0',};
 
 // Main function
 
@@ -81,9 +81,12 @@ int main (void)
 	  Get_GyroRates(&data[0]);
 	  filtre();
 
-	  getAsciiValues(ACCEL_XANGLE, &fila1[8]);
-	  getAsciiValues(ACCEL_YANGLE, &fila2[8]);
-	  //printf("X: %f\tY: %f\r\n", ACCEL_XANGLE, ACCEL_YANGLE);
+	  //getAsciiValues(ACCEL_XANGLE, &fila1[8]);
+	  //getAsciiValues(ACCEL_YANGLE, &fila2[8]);
+
+	  sprintf(&fila1[0], "X: %4.2f", ACCEL_XANGLE);
+	  sprintf(&fila2[0], "Y: %4.2f", ACCEL_YANGLE);
+	  printf("X: %4.2f\tY: %4.2f\r\n", ACCEL_XANGLE, ACCEL_YANGLE);
 
 	  lcd_goto(0,0);
 	  lcd_puts(&fila1[0]);
@@ -91,15 +94,14 @@ int main (void)
 	  lcd_puts(&fila2[0]);
 
 	  //delay_ms(8);
-    delay_ms(100);
+	  delay_ms(50);
   }
 }
 
 void getAsciiValues(float value, char * buffer)
 {
-	u8 part_entera = (int) abs(value);
-	u8 part_decimal = (u8) (((float)(abs(value) - part_entera))*10.0f);
-	xil_printf("decimal: %d\r\n", part_decimal);
+	u8 part_entera = (u8) abs(value);
+	u8 part_decimal = ((abs(value) - part_entera)*100);
 
 	if (value < 0)
 	{
@@ -114,4 +116,5 @@ void getAsciiValues(float value, char * buffer)
 	buffer[2] = (part_entera % 10) + '0';
 	buffer[3] = '.';
 	buffer[4] = part_decimal + '0';
+	buffer[4] = (part_decimal % 10) + '0';
 }

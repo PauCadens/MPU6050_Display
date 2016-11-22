@@ -6,4 +6,4 @@ vhdl
 default
 -msg
 __xps/ise/xmsgprops.lst
-mpu6050.mhs
+ethernet.mhs

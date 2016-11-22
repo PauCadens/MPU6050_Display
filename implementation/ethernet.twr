@@ -1,0 +1,327 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -e 3 -xml ethernet.twx
+ethernet.ncd ethernet.pcf
+
+Design file:              ethernet.ncd
+Physical constraint file: ethernet.pcf
+Device,package,speed:     xc6slx9,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+WARNING:Timing:3223 - Timing constraint PATH 
+   "TS_TIG_MCB3_LPDDR_CALIB_DONE_SYNCH_path" TIG; ignored during timing 
+   analysis.
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
+   information, see the TSI report.  Please consult the Xilinx Command Line 
+   Tools User Guide for information on generating a TSI report.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i" MAXSKEW = 6 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net skew is   1.131ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i" PERIOD = 40 ns 
+HIGH 14 ns;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 166 paths analyzed, 111 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   9.742ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "Ethernet_MAC_RX_CLK_IBUF" MAXSKEW = 6 ns;
+
+ 1 net analyzed, 0 failing nets detected.
+ 0 timing errors detected.
+ Maximum net skew is   1.248ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "Ethernet_MAC_RX_CLK_IBUF" PERIOD = 40 ns HIGH 14 ns;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 143 paths analyzed, 132 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   9.651ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_sync_microblaze_0_intc_path" TIG;
+
+ 6 paths analyzed, 4 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_intr_sync_p1_microblaze_0_intc_path" TIG;
+
+ 2 paths analyzed, 2 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_microblaze_0_Reset_path" TIG;
+
+ 3 paths analyzed, 3 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_microblaze_0_Interrupt_path" TIG;
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_axi4_0_reset_resync_path" TIG;
+
+ 8 paths analyzed, 8 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_axi4lite_0_reset_resync_path" TIG;
+
+ 8 paths analyzed, 8 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_MCB3_LPDDR_CALIB_DONE_SYNCH_path" TIG;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_MCB3_LPDDR_SYS_RST_SYNCH_path" TIG;
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_microblaze_0_dlmb_POR_FF_I_path" TIG;
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TIG_microblaze_0_ilmb_POR_FF_I_path" TIG;
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TSTXOUT_Ethernet_MAC = MAXDELAY FROM TIMEGRP 
+"TXCLK_GRP_Ethernet_MAC" TO         TIMEGRP "PADS" 10 ns;
+For more information, see From:To (Multicycle) Analysis in the Timing Closure User Guide (UG612).
+
+ 5 paths analyzed, 5 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   4.111ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_AXI_TX_FP_Ethernet_MAC_path" TIG;
+
+ 28 paths analyzed, 26 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_TX_AXI_FP_Ethernet_MAC_path" TIG;
+
+ 62 paths analyzed, 62 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_AXI_RX_FP_Ethernet_MAC_path" TIG;
+
+ 95 paths analyzed, 54 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: PATH "TS_RX_AXI_FP_Ethernet_MAC_path" TIG;
+
+ 10 paths analyzed, 10 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 66.666 MHz 
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   5.000ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_400_0000MHz180PLL0_nobuf = PERIOD TIMEGRP         
+"clk_400_0000MHz180PLL0_nobuf" TS_sys_clk_pin * 6 PHASE 1.2500125 ns         
+HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.599ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT2 = 
+PERIOD TIMEGRP         "clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT2" 
+TS_sys_clk_pin         HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 332107 paths analyzed, 19593 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  13.603ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS_clk_400_0000MHzPLL0_nobuf = PERIOD TIMEGRP 
+"clk_400_0000MHzPLL0_nobuf"         TS_sys_clk_pin * 6 HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+ Minimum period is   1.599ns.
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: OFFSET = IN 6 ns BEFORE COMP "Ethernet_MAC_RX_CLK";
+For more information, see Offset In Analysis in the Timing Closure User Guide (UG612).
+
+ 6 paths analyzed, 6 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Offset is  -0.566ns.
+--------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     15.000ns|      5.000ns|     13.603ns|            0|            0|            0|       332107|
+| TS_clk_400_0000MHz180PLL0_nobu|      2.500ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| f                             |             |             |             |             |             |             |             |
+| TS_clock_generator_0_clock_gen|     15.000ns|     13.603ns|          N/A|            0|            0|       332107|            0|
+| erator_0_SIG_PLL0_CLKOUT2     |             |             |             |             |             |             |             |
+| TS_clk_400_0000MHzPLL0_nobuf  |      2.500ns|      1.599ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Ethernet_MAC_RX_CLK
+-------------------+------------+------------+------------+------------+------------------------+--------+
+                   |Max Setup to|  Process   |Max Hold to |  Process   |                        | Clock  |
+Source             | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)       | Phase  |
+-------------------+------------+------------+------------+------------+------------------------+--------+
+Ethernet_MAC_RXD<0>|   -0.835(R)|      FAST  |    2.650(R)|      SLOW  |Ethernet_MAC_RX_CLK_IBUF|   0.000|
+Ethernet_MAC_RXD<1>|   -0.829(R)|      FAST  |    2.737(R)|      SLOW  |Ethernet_MAC_RX_CLK_IBUF|   0.000|
+Ethernet_MAC_RXD<2>|   -0.798(R)|      FAST  |    2.576(R)|      SLOW  |Ethernet_MAC_RX_CLK_IBUF|   0.000|
+Ethernet_MAC_RXD<3>|   -0.617(R)|      FAST  |    2.353(R)|      SLOW  |Ethernet_MAC_RX_CLK_IBUF|   0.000|
+Ethernet_MAC_RX_DV |   -0.586(R)|      FAST  |    2.192(R)|      SLOW  |Ethernet_MAC_RX_CLK_IBUF|   0.000|
+Ethernet_MAC_RX_ER |   -0.566(R)|      FAST  |    2.280(R)|      SLOW  |Ethernet_MAC_RX_CLK_IBUF|   0.000|
+-------------------+------------+------------+------------+------------+------------------------+--------+
+
+Clock Ethernet_MAC_TX_CLK to Pad
+-------------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+                   |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                                      | Clock  |
+Destination        |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)                     | Phase  |
+-------------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+Ethernet_MAC_TXD<0>|         9.245(F)|      SLOW  |         4.210(F)|      FAST  |Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i|  14.000|
+Ethernet_MAC_TXD<1>|         9.245(F)|      SLOW  |         4.210(F)|      FAST  |Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i|  14.000|
+Ethernet_MAC_TXD<2>|         8.571(F)|      SLOW  |         3.834(F)|      FAST  |Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i|  14.000|
+Ethernet_MAC_TXD<3>|         8.571(F)|      SLOW  |         3.834(F)|      FAST  |Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i|  14.000|
+Ethernet_MAC_TX_EN |         9.041(F)|      SLOW  |         4.095(F)|      FAST  |Ethernet_MAC/Ethernet_MAC/phy_tx_clk_i|  14.000|
+-------------------+-----------------+------------+-----------------+------------+--------------------------------------+--------+
+
+Clock to Setup on destination clock CLK_66MHZ
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+CLK_66MHZ          |   13.603|         |         |         |
+Ethernet_MAC_RX_CLK|         |    3.157|         |         |
+Ethernet_MAC_TX_CLK|    3.979|         |         |         |
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Ethernet_MAC_RX_CLK
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+CLK_66MHZ          |    7.735|         |    7.433|         |
+Ethernet_MAC_RX_CLK|         |         |    3.378|    3.306|
+-------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Ethernet_MAC_TX_CLK
+-------------------+---------+---------+---------+---------+
+                   | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+-------------------+---------+---------+---------+---------+
+CLK_66MHZ          |    6.937|         |    7.149|         |
+Ethernet_MAC_TX_CLK|    6.516|         |    3.410|         |
+-------------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 332653 paths, 2 nets, and 25168 connections
+
+Design statistics:
+   Minimum period:  13.603ns   (Maximum frequency:  73.513MHz)
+   Maximum path delay from/to any node:   4.111ns
+   Maximum net skew:   1.248ns
+
+
+Analysis completed Tue Nov 22 18:27:14 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 366 MB
+
+
+

@@ -1,1 +1,1 @@
- -device xc6slx9csg324-2 data\mpu6050.ucf 7 0
+ -device xc6slx9csg324-2 data\ethernet.ucf 7 0

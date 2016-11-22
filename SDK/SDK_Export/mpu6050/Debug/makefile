@@ -38,7 +38,7 @@ all: mpu6050.elf secondary-outputs
 mpu6050.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MicroBlaze gcc linker'
-	mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../mpu6050_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -50,7 +50,7 @@ mpu6050.elf.size: mpu6050.elf
 
 mpu6050.elf.elfcheck: mpu6050.elf
 	@echo 'Invoking: Xilinx ELF Check'
-	elfcheck mpu6050.elf -hw ../../mpu6050_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+	elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
 	@echo 'Finished building: $@'
 	@echo ' '
 

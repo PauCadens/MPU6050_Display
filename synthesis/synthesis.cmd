@@ -2,11 +2,11 @@
 
 if exist xst rmdir /s /q xst
 
-echo "xst -ifn "mpu6050_xst.scr" -intstyle silent"
+echo "xst -ifn "ethernet_xst.scr" -intstyle silent"
 
 echo "Running XST synthesis ..."
 
-xst -ifn "mpu6050_xst.scr" -intstyle silent
+xst -ifn "ethernet_xst.scr" -intstyle silent
 if errorlevel 1 exit 1
 
 echo "XST completed"

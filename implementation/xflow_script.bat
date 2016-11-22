@@ -6,20 +6,20 @@
 @REM #
 @REM # Command line for ngdbuild
 @REM #
-ngdbuild -p xc6slx9csg324-2 -nt timestamp -bm mpu6050.bmm "C:/Users/Pc/Documents/VHDL/mpu6050/implementation/mpu6050.ngc" -uc mpu6050.ucf mpu6050.ngd 
+ngdbuild -p xc6slx9csg324-2 -nt timestamp -bm ethernet.bmm "C:/Users/Pc/Documents/VHDL/ethernet/implementation/ethernet.ngc" -uc ethernet.ucf ethernet.ngd 
 
 @REM #
 @REM # Command line for map
 @REM #
-map -o mpu6050_map.ncd -w -pr b -ol high -timing -detail mpu6050.ngd mpu6050.pcf 
+map -o ethernet_map.ncd -w -pr b -ol high -timing -detail ethernet.ngd ethernet.pcf 
 
 @REM #
 @REM # Command line for par
 @REM #
-par -w -ol high mpu6050_map.ncd mpu6050.ncd mpu6050.pcf 
+par -w -ol high ethernet_map.ncd ethernet.ncd ethernet.pcf 
 
 @REM #
 @REM # Command line for post_par_trce
 @REM #
-trce -e 3 -xml mpu6050.twx mpu6050.ncd mpu6050.pcf 
+trce -e 3 -xml ethernet.twx ethernet.ncd ethernet.pcf 
 

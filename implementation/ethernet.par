@@ -1,0 +1,365 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+PAU::  Tue Nov 22 18:26:07 2016
+
+par -w -ol high ethernet_map.ncd ethernet.ncd ethernet.pcf 
+
+
+Constraints file: ethernet.pcf.
+Loading device for application Rf_Device from file '6slx9.nph' in environment
+C:\Xilinx\14.7\ISE_DS\ISE\;C:\Xilinx\14.7\ISE_DS\EDK.
+   "ethernet" is an NCD, version 3.2, device xc6slx9, package csg324, speed -2
+WARNING:ConstraintSystem - The Offset constraint <OFFSET = IN 6 ns BEFORE COMP "Ethernet_MAC_RX_CLK";>
+   [ethernet.pcf(14143)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
+
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.23 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+Slice Logic Utilization:
+  Number of Slice Registers:                 3,564 out of  11,440   31%
+    Number used as Flip Flops:               3,561
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                3
+  Number of Slice LUTs:                      4,285 out of   5,720   74%
+    Number used as logic:                    4,001 out of   5,720   69%
+      Number using O6 output only:           2,951
+      Number using O5 output only:              77
+      Number using O5 and O6:                  973
+      Number used as ROM:                        0
+    Number used as Memory:                     216 out of   1,440   15%
+      Number used as Dual Port RAM:             72
+        Number using O6 output only:             0
+        Number using O5 output only:             1
+        Number using O5 and O6:                 71
+      Number used as Single Port RAM:            4
+        Number using O6 output only:             4
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:           140
+        Number using O6 output only:            43
+        Number using O5 output only:             1
+        Number using O5 and O6:                 96
+    Number used exclusively as route-thrus:     68
+      Number with same-slice register load:     57
+      Number with same-slice carry load:        11
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,419 out of   1,430   99%
+  Number of MUXCYs used:                       728 out of   2,860   25%
+  Number of LUT Flip Flop pairs used:        4,672
+    Number with an unused Flip Flop:         1,410 out of   4,672   30%
+    Number with an unused LUT:                 387 out of   4,672    8%
+    Number of fully used LUT-FF pairs:       2,875 out of   4,672   61%
+    Number of slice register sites lost
+      to control set restrictions:               0 out of  11,440    0%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        72 out of     200   36%
+    Number of LOCed IOBs:                       72 out of      72  100%
+    IOB Flip Flops:                             18
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        26 out of      32   81%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 1 out of      32    3%
+    Number used as BUFIO2s:                      1
+    Number used as BUFIO2_2CLKs:                 0
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       2 out of      16   12%
+    Number used as BUFGs:                        2
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                  10 out of     200    5%
+    Number used as ILOGIC2s:                    10
+    Number used as ISERDES2s:                    0
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:        23 out of     200   11%
+    Number used as IODELAY2s:                    0
+    Number used as IODRP2s:                      1
+    Number used as IODRP2_MCBs:                 22
+  Number of OLOGIC2/OSERDES2s:                  50 out of     200   25%
+    Number used as OLOGIC2s:                     7
+    Number used as OSERDES2s:                   43
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         1 out of       4   25%
+  Number of DSP48A1s:                            3 out of      16   18%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                1 out of       2   50%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            1 out of       2   50%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+WARNING:Timing:3223 - Timing constraint PATH "TS_TIG_MCB3_LPDDR_CALIB_DONE_SYNCH_path" TIG; ignored during timing analysis.
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
+   Command Line Tools User Guide for information on generating a TSI report.
+Starting initial Timing Analysis.  REAL time: 11 secs 
+Finished initial Timing Analysis.  REAL time: 11 secs 
+
+WARNING:Par:288 - The signal
+   Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/RX/INST_RX_INTRFCE/I_RX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/U0/xst_fifo_
+   generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+WARNING:Par:288 - The signal
+   Ethernet_MAC/Ethernet_MAC/XEMAC_I/EMAC_I/TX/INST_TX_INTRFCE/I_TX_FIFO/LEGACY_COREGEN_DEPTH.V6_S6_AND_LATER.I_ASYNC_FIFO_BRAM/U0/xst_fifo_
+   generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm/Mram_RAM_RAMD_D1_O has no load.  PAR will not attempt to route this signal.
+Starting Router
+
+
+Phase  1  : 30083 unrouted;      REAL time: 12 secs 
+
+Phase  2  : 25350 unrouted;      REAL time: 12 secs 
+
+Phase  3  : 12017 unrouted;      REAL time: 21 secs 
+
+Phase  4  : 12017 unrouted; (Setup:0, Hold:1202, Component Switching Limit:0)     REAL time: 22 secs 
+
+Updating file: ethernet.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:440, Component Switching Limit:0)     REAL time: 42 secs 
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:440, Component Switching Limit:0)     REAL time: 42 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:440, Component Switching Limit:0)     REAL time: 42 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:440, Component Switching Limit:0)     REAL time: 42 secs 
+
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 42 secs 
+
+Phase 10  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 44 secs 
+Total REAL time to Router completion: 44 secs 
+Total CPU time to Router completion: 45 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|  clk_66_6667MHzPLL0 |  BUFGMUX_X2Y3| No   | 1343 |  0.752     |  2.143      |
++---------------------+--------------+------+------+------------+-------------+
+|microblaze_0_debug_D |              |      |      |            |             |
+|              bg_Clk | BUFGMUX_X3Y13| No   |   63 |  0.109     |  1.501      |
++---------------------+--------------+------+------+------------+-------------+
+|Ethernet_MAC_RX_CLK_ |              |      |      |            |             |
+|                IBUF |         Local|      |   17 |  1.003     |  4.587      |
++---------------------+--------------+------+------+------------+-------------+
+|microblaze_0_debug_D |              |      |      |            |             |
+|           bg_Update |         Local|      |   20 |  5.223     |  6.172      |
++---------------------+--------------+------+------+------------+-------------+
+|Ethernet_MAC/Etherne |              |      |      |            |             |
+|  t_MAC/phy_tx_clk_i |         Local|      |   20 |  1.103     |  1.679      |
++---------------------+--------------+------+------+------------+-------------+
+|MCB3_LPDDR/sysclk_2x |              |      |      |            |             |
+|           _bufpll_o |         Local|      |   31 |  0.704     |  1.620      |
++---------------------+--------------+------+------+------------+-------------+
+|MCB3_LPDDR/sysclk_2x |              |      |      |            |             |
+|       _180_bufpll_o |         Local|      |   37 |  0.723     |  1.639      |
++---------------------+--------------+------+------+------------+-------------+
+|MCB3_LPDDR/MCB3_LPDD |              |      |      |            |             |
+|R/mcb_ui_top_0/mcb_r |              |      |      |            |             |
+|aw_wrapper_inst/ioi_ |              |      |      |            |             |
+|             drp_clk |         Local|      |   22 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|MCB3_LPDDR/MCB3_LPDD |              |      |      |            |             |
+|R/mcb_ui_top_0/mcb_r |              |      |      |            |             |
+|aw_wrapper_inst/idel |              |      |      |            |             |
+|        ay_dqs_ioi_s |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|MCB3_LPDDR/MCB3_LPDD |              |      |      |            |             |
+|R/mcb_ui_top_0/mcb_r |              |      |      |            |             |
+|aw_wrapper_inst/idel |              |      |      |            |             |
+|        ay_dqs_ioi_m |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|MCB3_LPDDR/MCB3_LPDD |              |      |      |            |             |
+|R/mcb_ui_top_0/mcb_r |              |      |      |            |             |
+|aw_wrapper_inst/idel |              |      |      |            |             |
+|       ay_udqs_ioi_s |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|MCB3_LPDDR/MCB3_LPDD |              |      |      |            |             |
+|R/mcb_ui_top_0/mcb_r |              |      |      |            |             |
+|aw_wrapper_inst/idel |              |      |      |            |             |
+|       ay_udqs_ioi_m |         Local|      |    1 |  0.000     |  0.002      |
++---------------------+--------------+------+------+------------+-------------+
+|  USB_Uart_Interrupt |         Local|      |    1 |  0.000     |  1.118      |
++---------------------+--------------+------+------+------------+-------------+
+|Ethernet_MAC_IP2INTC |              |      |      |            |             |
+|               _Irpt |         Local|      |    1 |  0.000     |  2.341      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 4
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS_clk_400_0000MHzPLL0_nobuf = PERIOD TIM | MINPERIOD   |     0.901ns|     1.599ns|       0|           0
+  EGRP "clk_400_0000MHzPLL0_nobuf"          |             |            |            |        |            
+  TS_sys_clk_pin * 6 HIGH 50%               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk_400_0000MHz180PLL0_nobuf = PERIOD  | MINPERIOD   |     0.901ns|     1.599ns|       0|           0
+  TIMEGRP         "clk_400_0000MHz180PLL0_n |             |            |            |        |            
+  obuf" TS_sys_clk_pin * 6 PHASE 1.2500125  |             |            |            |        |            
+  ns         HIGH 50%                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clock_generator_0_clock_generator_0_SI | SETUP       |     1.397ns|    13.603ns|       0|           0
+  G_PLL0_CLKOUT2 = PERIOD TIMEGRP         " | HOLD        |     0.318ns|            |       0|           0
+  clock_generator_0_clock_generator_0_SIG_P |             |            |            |        |            
+  LL0_CLKOUT2" TS_sys_clk_pin         HIGH  |             |            |            |        |            
+  50%                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_ | MINLOWPULSE |    10.000ns|     5.000ns|       0|           0
+  pin" 66.666 MHz HIGH 50%                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Ethernet_MAC_RX_CLK_IBUF" MAXSKEW =  | NETSKEW     |     4.752ns|     1.248ns|       0|           0
+  6 ns                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Ethernet_MAC/Ethernet_MAC/phy_tx_clk | NETSKEW     |     4.869ns|     1.131ns|       0|           0
+  _i" MAXSKEW = 6 ns                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TSTXOUT_Ethernet_MAC = MAXDELAY FROM TIME | MAXDELAY    |     5.889ns|     4.111ns|       0|           0
+  GRP "TXCLK_GRP_Ethernet_MAC" TO         T |             |            |            |        |            
+  IMEGRP "PADS" 10 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  OFFSET = IN 6 ns BEFORE COMP "Ethernet_MA | SETUP       |     6.566ns|    -0.566ns|       0|           0
+  C_RX_CLK"                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "Ethernet_MAC/Ethernet_MAC/phy_tx_clk | SETUP       |    10.590ns|     9.742ns|       0|           0
+  _i" PERIOD = 40 ns HIGH 14 ns             | HOLD        |     0.378ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  NET "Ethernet_MAC_RX_CLK_IBUF" PERIOD = 4 | SETUP       |    10.622ns|     9.651ns|       0|           0
+  0 ns HIGH 14 ns                           | HOLD        |     0.403ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_axi4_0_reset_resync_path" TIG    | MAXDELAY    |         N/A|     6.495ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_axi4lite_0_reset_resync_path" TI | MAXDELAY    |         N/A|     6.408ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG_MCB3_LPDDR_CALIB_DONE_SYNCH_ | N/A         |         N/A|         N/A|     N/A|         N/A
+  path" TIG                                 |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG_MCB3_LPDDR_SYS_RST_SYNCH_pat | SETUP       |         N/A|     2.352ns|     N/A|           0
+  h" TIG                                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG_microblaze_0_dlmb_POR_FF_I_p | SETUP       |         N/A|     2.357ns|     N/A|           0
+  ath" TIG                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG_microblaze_0_ilmb_POR_FF_I_p | SETUP       |         N/A|     1.963ns|     N/A|           0
+  ath" TIG                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG_microblaze_0_Interrupt_path" | SETUP       |         N/A|     2.373ns|     N/A|           0
+   TIG                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_AXI_TX_FP_Ethernet_MAC_path" TIG | SETUP       |         N/A|     7.149ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TX_AXI_FP_Ethernet_MAC_path" TIG | MAXDELAY    |         N/A|     4.362ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_AXI_RX_FP_Ethernet_MAC_path" TIG | SETUP       |         N/A|     7.735ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_RX_AXI_FP_Ethernet_MAC_path" TIG | SETUP       |         N/A|     3.157ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_TIG_microblaze_0_Reset_path" TIG | SETUP       |         N/A|     4.044ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_intr_sync_p1_microblaze_0_intc_p | SETUP       |         N/A|     1.021ns|     N/A|           0
+  ath" TIG                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_sync_microblaze_0_intc_path" TIG | SETUP       |         N/A|     9.164ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_sys_clk_pin
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|TS_sys_clk_pin                 |     15.000ns|      5.000ns|     13.603ns|            0|            0|            0|       332107|
+| TS_clk_400_0000MHz180PLL0_nobu|      2.500ns|      1.599ns|          N/A|            0|            0|            0|            0|
+| f                             |             |             |             |             |             |             |             |
+| TS_clock_generator_0_clock_gen|     15.000ns|     13.603ns|          N/A|            0|            0|       332107|            0|
+| erator_0_SIG_PLL0_CLKOUT2     |             |             |             |             |             |             |             |
+| TS_clk_400_0000MHzPLL0_nobuf  |      2.500ns|      1.599ns|          N/A|            0|            0|            0|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 2 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 50 secs 
+Total CPU time to PAR completion: 47 secs 
+
+Peak Memory Usage:  504 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 6
+Number of info messages: 1
+
+Writing design to file ethernet.ncd
+
+
+
+PAR done!

@@ -1,2 +1,2 @@
    text	   data	    bss	    dec	    hex	filename
-  31244	    456	  33004	  64704	   fcc0	mpu6050.elf
+  94484	   1608	  33060	 129152	  1f880	mpu6050.elf

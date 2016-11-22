@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>mpu6050</name>
-	<comment>mpu6050_bsp - microblaze_0</comment>
+	<comment>standalone_bsp_0 - microblaze_0</comment>
 	<projects>
-		<project>mpu6050_bsp</project>
+		<project>standalone_bsp_0</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

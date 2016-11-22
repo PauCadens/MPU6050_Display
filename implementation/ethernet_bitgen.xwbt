@@ -1,0 +1,7 @@
+INFILE=C:\Users\Pc\Documents\VHDL\ethernet\implementation\ethernet.ncd
+OUTFILE=C:\Users\Pc\Documents\VHDL\ethernet\implementation\ethernet.bit
+FAMILY=Spartan6
+PART=xc6slx9-2csg324
+WORKINGDIR=C:\Users\Pc\Documents\VHDL\ethernet\implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0

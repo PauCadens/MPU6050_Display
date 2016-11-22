@@ -1,0 +1,68 @@
+#
+# pin constraints
+#
+NET CDCE913_SCL LOC = "F14"  |  IOSTANDARD = "LVCMOS33"  |  OPEN_DRAIN;
+NET CDCE913_SDA LOC = "F15"  |  IOSTANDARD = "LVCMOS33"  |  OPEN_DRAIN;
+NET CLK_66MHZ LOC = "K15"  |  IOSTANDARD = "LVCMOS33";
+
+NET Ethernet_MAC_COL LOC = "M18"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_CRS LOC = "N17"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_MDC LOC = "M16"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_MDIO LOC = "L18"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_PHY_RST_N LOC = "T18"  |  IOSTANDARD = "LVCMOS33"  |  TIG;
+NET Ethernet_MAC_RXD[0] LOC = "T17"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_RXD[1] LOC = "N16"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_RXD[2] LOC = "N15"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_RXD[3] LOC = "P18"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_RX_CLK LOC = "L15"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_RX_DV LOC = "P17"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_RX_ER LOC = "N18"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_TXD[0] LOC = "K18"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_TXD[1] LOC = "K17"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_TXD[2] LOC = "J18"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_TXD[3] LOC = "J16"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_TX_CLK LOC = "H17"  |  IOSTANDARD = "LVCMOS33";
+NET Ethernet_MAC_TX_EN LOC = "L17"  |  IOSTANDARD = "LVCMOS33";
+
+NET RESET LOC = "V4"  |  IOSTANDARD = "LVCMOS33"  |  TIG  |  PULLDOWN;
+NET USB_Uart_sin LOC = "R7"  |  IOSTANDARD = "LVCMOS33";
+NET USB_Uart_sout LOC = "T7"  |  IOSTANDARD = "LVCMOS33";
+
+# LCD E
+NET LCD_IO_PIN<6> LOC = "F17" |  IOSTANDARD = "LVCMOS33" | PULLDOWN | SLEW = SLOW | DRIVE = 2; #h12
+
+# LCD RW
+NET LCD_IO_PIN<5> LOC = "K13" |  IOSTANDARD = "LVCMOS33" | PULLDOWN | SLEW = SLOW | DRIVE = 2; #g13
+
+# LCD RS
+NET LCD_IO_PIN<4> LOC = "K12" |  IOSTANDARD = "LVCMOS33" | PULLDOWN | SLEW = SLOW | DRIVE = 2; #e16
+
+# LCD DB7
+NET LCD_IO_PIN<3> LOC = "E18" |  IOSTANDARD = "LVCMOS33" | PULLDOWN | SLEW = SLOW | DRIVE = 2; #e18
+
+# LCD DB6
+NET LCD_IO_PIN<2> LOC = "E16" |  IOSTANDARD = "LVCMOS33" | PULLDOWN | SLEW = SLOW | DRIVE = 2; #k13
+
+# LCD DB5
+NET LCD_IO_PIN<1> LOC = "G13" |  IOSTANDARD = "LVCMOS33" | PULLDOWN | SLEW = SLOW | DRIVE = 2; #k12
+
+# LCD DB4
+NET LCD_IO_PIN<0> LOC = "H12" |  IOSTANDARD = "LVCMOS33" | PULLDOWN | SLEW = SLOW | DRIVE = 2; #f17
+#
+# additional constraints
+#
+
+NET "CLK_66MHZ" TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 66666 kHz;
+
+### Set Vccaux for S6LX9 MicroBoard to 3.3V ###
+CONFIG VCCAUX = "3.3" ;
+
+### Pull-ups on RXD are necessary to set the PHY AD to 11110b.  ###
+###   Must keep the PHY from defaulting to PHY AD = 00000b      ###
+###   because this is Isolate Mode                              ###
+Net Ethernet_MAC_RXD<0> PULLUP;
+Net Ethernet_MAC_RXD<1> PULLUP;
+Net Ethernet_MAC_RXD<2> PULLUP;
+Net Ethernet_MAC_RXD<3> PULLUP;
+

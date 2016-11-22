@@ -1,38 +1,42 @@
 
 <RENDERBATCH>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\proc_sys_reset_0.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\proc_sys_reset_0.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\proc_sys_reset_0.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_intc.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_intc.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\microblaze_0_intc.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_intc.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_intc.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\microblaze_0_intc.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\microblaze_0_ilmb.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_ilmb.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\microblaze_0_ilmb.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\microblaze_0_i_bram_ctrl.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_i_bram_ctrl.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\microblaze_0_i_bram_ctrl.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\microblaze_0_dlmb.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_dlmb.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\microblaze_0_dlmb.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\microblaze_0_d_bram_ctrl.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_d_bram_ctrl.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\microblaze_0_d_bram_ctrl.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\microblaze_0_bram_block.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0_bram_block.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\microblaze_0_bram_block.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\microblaze_0.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\microblaze_0.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\microblaze_0.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\microblaze_0.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\debug_module.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\debug_module.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\debug_module.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\debug_module.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\debug_module.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\debug_module.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\clock_generator_0.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\clock_generator_0.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\clock_generator_0.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\clock_generator_0.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\clock_generator_0.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\clock_generator_0.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\axi_timer_0.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\axi_timer_0.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\axi_timer_0.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\axi_timer_0.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\axi_timer_0.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\axi_timer_0.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\axi4lite_0.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\axi4lite_0.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\axi4lite_0.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\axi4lite_0.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\axi4lite_0.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\axi4lite_0.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\USB_Uart.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\USB_Uart.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\USB_Uart.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\axi4_0.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\axi4_0.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\axi4_0.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\LEDs.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\LEDs.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\LEDs.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\USB_Uart.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\USB_Uart.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\USB_Uart.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\I2C.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\I2C.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\I2C.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\MCB3_LPDDR.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\MCB3_LPDDR.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\MCB3_LPDDR.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\Display16x2.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\Display16x2.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\Display16x2.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\Ethernet_MAC.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\Ethernet_MAC.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\Ethernet_MAC.svg"/>
 
-  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\mpu6050_blkd.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\mpu6050\SDK\SDK_Export\hw\imgs\mpu6050_blkd.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\mpu6050\__xps\.dswkshop\mpu6050_blkd.svg"/>
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\I2C.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\I2C.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\I2C.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\Display16x2.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\Display16x2.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\Display16x2.svg"/>
+
+  <RENDERIMG RASNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\ethernet_blkd.jpg" SVGNAME="C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\imgs\ethernet_blkd.svg" TMPSVGFN="C:\Users\Pc\Documents\VHDL\ethernet\__xps\.dswkshop\ethernet_blkd.svg"/>
 
 </RENDERBATCH>
