@@ -8,12 +8,15 @@
 #include "stdlib.h"
 #include "stdio.h"
 
+u32 filterTimerStart(void);
+u32 filterTimerEnd(void);
 void getAsciiValues(float value, char * buffer);
 
 // Global variables
 
 XGpio GpioOutput;
 XTmrCtr DelayTimer;
+XTmrCtr FilterTimer;
 
 extern float ACCEL_XANGLE;
 extern float ACCEL_YANGLE;
@@ -25,6 +28,8 @@ extern Xint16 ACCEL_XOUT;
 extern Xint16 ACCEL_YOUT;
 extern Xint16 ACCEL_ZOUT;
 u16 data[3] = {0};
+u32 start = 0;
+u32 end = 0;
 
 //char fila1[17] = {'X', ':', '\0', '\0', '\0', '\0', '\0', 34, '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0'};
 //char fila2[17] = {'Y', ':', '\0', '\0', '\0', '\0', '\0', 34, '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0'};
@@ -51,6 +56,15 @@ int main (void)
   }
   XTmrCtr_SetOptions(&DelayTimer, 1, XTC_DOWN_COUNT_OPTION);
 
+  // Initialize the Timer
+  status = XTmrCtr_Initialize(&FilterTimer, XPAR_AXI_TIMER_1_DEVICE_ID);
+  if (status != XST_SUCCESS){
+    xil_printf("Timer failed to initialize\r\n");
+    return XST_FAILURE;
+  }
+  XTmrCtr_SetResetValue(&FilterTimer, 1, 0);
+  XTmrCtr_Start(&FilterTimer, 1);
+
   // Initialize the GPIO driver for the LCD
    status = XGpio_Initialize(&GpioOutput, XPAR_DISPLAY16X2_DEVICE_ID);
    if (status != XST_SUCCESS){
@@ -70,23 +84,25 @@ int main (void)
   delay_ms(500);
   lcd_goto(0,0);
   MpuSensorInit();
+  //printf("fgdsfhfsgh");
   lcd_goto(0,0);
   lcd_puts("                ");
 
 
   while(1)
   {
+	  start = filterTimerStart();
 	  Get_Accel_Values();
 	  Get_Accel_Angles();
 	  Get_GyroRates(&data[0]);
-	  filtre();
+	  filtre(start, end);
 
 	  //getAsciiValues(ACCEL_XANGLE, &fila1[8]);
 	  //getAsciiValues(ACCEL_YANGLE, &fila2[8]);
 
-	  sprintf(&fila1[0], "X: %4.2f", ACCEL_XANGLE);
-	  sprintf(&fila2[0], "Y: %4.2f", ACCEL_YANGLE);
-	  printf("X: %4.2f\tY: %4.2f\r\n", ACCEL_XANGLE, ACCEL_YANGLE);
+	  sprintf(&fila1[0], "X: %5.2f", ACCEL_XANGLE);
+	  sprintf(&fila2[0], "Y: %5.2f", ACCEL_YANGLE);
+	  printf("X: %5.2f\tY: %5.2f\r\n", ACCEL_XANGLE, ACCEL_YANGLE);
 
 	  lcd_goto(0,0);
 	  lcd_puts(&fila1[0]);
@@ -95,6 +111,7 @@ int main (void)
 
 	  //delay_ms(8);
 	  delay_ms(50);
+	  end = filterTimerEnd();
   }
 }
 
@@ -117,4 +134,15 @@ void getAsciiValues(float value, char * buffer)
 	buffer[3] = '.';
 	buffer[4] = part_decimal + '0';
 	buffer[4] = (part_decimal % 10) + '0';
+}
+
+u32 filterTimerStart(void)
+{
+	XTmrCtr_Reset(&FilterTimer, 1);
+	return XTmrCtr_GetValue(&FilterTimer, 1);
+}
+
+u32 filterTimerEnd(void)
+{
+	return XTmrCtr_GetValue(&FilterTimer, 1);
 }

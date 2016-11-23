@@ -220,14 +220,16 @@ void Get_GyroRates(u16 * data)
 	//xil_printf("RAW Gyro Rate Z: %d\r\n", (int) GYRO_ZRATE);
 }
 
-void filtre(void)
+void filtre(u32 start, u32 end)
 {
 	/* http://robologs.net/2014/10/15/tutorial-de-arduino-y-mpu-6050/
 	Angle[0] = 0.98 *(Angle[0]+Gy[0]*0.010) + 0.02*Acc[0];
 	Angle[1] = 0.98 *(Angle[1]+Gy[1]*0.010) + 0.02*Acc[1];
 	*/
+	double dT = (double) (((double)(end-start))/((double) XPAR_AXI_TIMER_1_CLOCK_FREQ_HZ));
+	double a = (double)(0.075/(0.075 + dT));
 
-	ACCEL_XANGLE = 0.99 * (ACCEL_XANGLE + GYRO_XRATE * 0.05) + 0.01 * (ACCEL_XOUT/A_R);
-	ACCEL_YANGLE = 0.99 * (ACCEL_YANGLE + GYRO_YRATE * 0.05) + 0.01 * (ACCEL_YOUT/A_R);
+	ACCEL_XANGLE = a * (ACCEL_XANGLE + GYRO_XRATE * dT) + (1-a) * (ACCEL_XOUT/A_R);
+	ACCEL_YANGLE = a * (ACCEL_YANGLE + GYRO_YRATE * dT) + (1-a) * (ACCEL_YOUT/A_R);
 	//xil_printf("Filtrades Angle X: %d.%d\tAngle Y: %d\r\n", (int)ACCEL_XANGLE, (int)((ACCEL_XANGLE - ((int)ACCEL_XANGLE))*10), (int)ACCEL_YANGLE);
 }
