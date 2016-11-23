@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-11-22T17:53:36</DateModified>
+  <DateModified>2016-11-23T19:45:27</DateModified>
   <ModuleName>ethernet</ModuleName>
-  <SummaryTimeStamp>2016-11-22T17:53:35</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-11-23T19:45:26</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Pc/Documents/VHDL/ethernet/__xps/ise/ethernet.xreport</SavedFilePath>
   <FilterFile>filter.filter</FilterFile>
   <SavedFilterFilePath>C:/Users/Pc/Documents/VHDL/ethernet/__xps/ise</SavedFilterFilePath>

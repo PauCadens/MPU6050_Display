@@ -139,4 +139,4 @@ void Get_GyroRates(u16 * data);
 
 int MpuSensorInit();
 
-void filtre(void);
+void filtre(u32 start, u32 end);

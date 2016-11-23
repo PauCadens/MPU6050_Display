@@ -10,15 +10,15 @@
 /*                                                                 */
 /*******************************************************************/
 
-_STACK_SIZE = DEFINED(_STACK_SIZE) ? _STACK_SIZE : 0x4000;
-_HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0x4000;
+_STACK_SIZE = DEFINED(_STACK_SIZE) ? _STACK_SIZE : 0x16000;
+_HEAP_SIZE = DEFINED(_HEAP_SIZE) ? _HEAP_SIZE : 0x16000;
 
 /* Define Memories in the system */
 
 MEMORY
 {
-   microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl : ORIGIN = 0x00000050, LENGTH = 0x0000FFB0
-   mcb3_lpddr_S0_AXI_BASEADDR  : ORIGIN = 0xa4000000, LENGTH = 0x04000000
+   microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl : ORIGIN = 0x00000050, LENGTH = 0x00001FB0
+   mcb3_lpddr_S0_AXI_BASEADDR : ORIGIN = 0xA4000000, LENGTH = 0x04000000
 }
 
 /* Specify the default entry point to the program */

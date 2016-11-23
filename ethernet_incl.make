@@ -79,7 +79,8 @@ implementation/ethernet_usb_uart_wrapper.ngc \
 implementation/ethernet_mcb3_lpddr_wrapper.ngc \
 implementation/ethernet_ethernet_mac_wrapper.ngc \
 implementation/ethernet_i2c_wrapper.ngc \
-implementation/ethernet_display16x2_wrapper.ngc
+implementation/ethernet_display16x2_wrapper.ngc \
+implementation/ethernet_axi_timer_1_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

@@ -24,6 +24,10 @@ XTmrCtr_Config XTmrCtr_ConfigTable[] =
 	{
 		XPAR_AXI_TIMER_0_DEVICE_ID,
 		XPAR_AXI_TIMER_0_BASEADDR
+	},
+	{
+		XPAR_AXI_TIMER_1_DEVICE_ID,
+		XPAR_AXI_TIMER_1_BASEADDR
 	}
 };
 

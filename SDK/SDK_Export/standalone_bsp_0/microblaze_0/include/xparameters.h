@@ -18,13 +18,20 @@
 /******************************************************************/
 
 /* Definitions for driver TMRCTR */
-#define XPAR_XTMRCTR_NUM_INSTANCES 1
+#define XPAR_XTMRCTR_NUM_INSTANCES 2
 
 /* Definitions for peripheral AXI_TIMER_0 */
 #define XPAR_AXI_TIMER_0_DEVICE_ID 0
 #define XPAR_AXI_TIMER_0_BASEADDR 0x41C00000
 #define XPAR_AXI_TIMER_0_HIGHADDR 0x41C0FFFF
 #define XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ 66666666
+
+
+/* Definitions for peripheral AXI_TIMER_1 */
+#define XPAR_AXI_TIMER_1_DEVICE_ID 1
+#define XPAR_AXI_TIMER_1_BASEADDR 0x41C40000
+#define XPAR_AXI_TIMER_1_HIGHADDR 0x41C4FFFF
+#define XPAR_AXI_TIMER_1_CLOCK_FREQ_HZ 66666666
 
 
 /******************************************************************/
@@ -34,6 +41,11 @@
 #define XPAR_TMRCTR_0_BASEADDR 0x41C00000
 #define XPAR_TMRCTR_0_HIGHADDR 0x41C0FFFF
 #define XPAR_TMRCTR_0_CLOCK_FREQ_HZ XPAR_AXI_TIMER_0_CLOCK_FREQ_HZ
+/* Canonical definitions for peripheral AXI_TIMER_1 */
+#define XPAR_TMRCTR_1_DEVICE_ID XPAR_AXI_TIMER_1_DEVICE_ID
+#define XPAR_TMRCTR_1_BASEADDR 0x41C40000
+#define XPAR_TMRCTR_1_HIGHADDR 0x41C4FFFF
+#define XPAR_TMRCTR_1_CLOCK_FREQ_HZ XPAR_AXI_TIMER_1_CLOCK_FREQ_HZ
 
 /******************************************************************/
 

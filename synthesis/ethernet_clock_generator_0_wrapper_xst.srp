@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.19 secs
+Total CPU time to Xst completion: 0.18 secs
  
 --> 
 TABLE OF CONTENTS
@@ -313,8 +313,8 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.55 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.52 secs
  
 --> 
 

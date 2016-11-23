@@ -59,6 +59,9 @@ Loading design module
 "C:/Users/Pc/Documents/VHDL/ethernet/implementation/ethernet_display16x2_wrapper
 .ngc"...
 Loading design module
+"C:/Users/Pc/Documents/VHDL/ethernet/implementation/ethernet_axi_timer_1_wrapper
+.ngc"...
+Loading design module
 "C:/Users/Pc/Documents/VHDL/ethernet/implementation/ethernet_microblaze_0_bram_b
 lock_wrapper.ngc"...
 Applying constraints in
@@ -214,10 +217,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:  31
 
-Total memory usage is 308064 kilobytes
+Total memory usage is 308096 kilobytes
 
 Writing NGD file "ethernet.ngd" ...
-Total REAL time to NGDBUILD completion: 1 min  1 sec
-Total CPU time to NGDBUILD completion:  1 min  1 sec
+Total REAL time to NGDBUILD completion: 1 min  4 sec
+Total CPU time to NGDBUILD completion:  1 min  3 sec
 
 Writing NGDBUILD log file "ethernet.bld"...

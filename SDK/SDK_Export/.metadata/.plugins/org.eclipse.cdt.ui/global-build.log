@@ -1,4 +1,4 @@
-18:29:21 **** Build of project standalone_bsp_0 ****
+20:07:57 **** Build of project standalone_bsp_0 ****
 make -k all 
 libgen -hw ../ethernet_hw_platform/system.xml\
 	       \
@@ -42,7 +42,7 @@ Running execs_generate.
 **** Build of configuration Debug for project mpu6050 ****
 
 Nothing to build for project mpu6050
-18:32:22 **** Auto Build of configuration Debug for project mpu6050 ****
+20:09:57 **** Auto Build of configuration Debug for project mpu6050 ****
 make all 
 'Building file: ../src/display.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -67,108 +67,7 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -m
 'Invoking: MicroBlaze Print Size'
 mb-size mpu6050.elf  |tee "mpu6050.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  30556	    440	  33004	  64000	   fa00	mpu6050.elf
-'Finished building: mpu6050.elf.size'
-' '
-'Invoking: Xilinx ELF Check'
-elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
-elfcheck
-Xilinx EDK 14.7 Build EDK_P.20131013
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
-microblaze_0 mpu6050.elf 
-
-ELF file	: mpu6050.elf
-ERROR:EDK:3165 - elfcheck failed!
-The following sections did not fit into Processor  memory:
-	Section .stack (0xBA30 - 0xFA2F)
-	Section .heap (0x7A2C - 0xBA2F)
-	Section .bss (0x7948 - 0x7A2B)
-	Section .data (0x77A0 - 0x7947)
-	Section .sdata2 (0x779C - 0x779F)
-	Section .rodata (0x6F4C - 0x779B)
-	Section .dtors (0x6F44 - 0x6F4B)
-	Section .ctors (0x6F3C - 0x6F43)
-	Section .fini (0x6F1C - 0x6F3B)
-	Section .init (0x6EE0 - 0x6F1B)
-	Section .text (0x50 - 0x6EDF)
-
-Try using the linker script generation tools to generate an ELF that maps
-correctly to your hardware design.
-'Finished building: mpu6050.elf.elfcheck'
-' '
-18:32:44 **** Auto Build of configuration Debug for project mpu6050 ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu6050.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu6050.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu6050.elf  |tee "mpu6050.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  30556	    440	  33004	  64000	   fa00	mpu6050.elf
-'Finished building: mpu6050.elf.size'
-' '
-'Invoking: Xilinx ELF Check'
-elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
-elfcheck
-Xilinx EDK 14.7 Build EDK_P.20131013
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
-microblaze_0 mpu6050.elf 
-
-ELF file	: mpu6050.elf
-ERROR:EDK:3165 - elfcheck failed!
-The following sections did not fit into Processor  memory:
-	Section .stack (0xBA30 - 0xFA2F)
-	Section .heap (0x7A2C - 0xBA2F)
-	Section .bss (0x7948 - 0x7A2B)
-	Section .data (0x77A0 - 0x7947)
-	Section .sdata2 (0x779C - 0x779F)
-	Section .rodata (0x6F4C - 0x779B)
-	Section .dtors (0x6F44 - 0x6F4B)
-	Section .ctors (0x6F3C - 0x6F43)
-	Section .fini (0x6F1C - 0x6F3B)
-	Section .init (0x6EE0 - 0x6F1B)
-	Section .text (0x50 - 0x6EDF)
-
-Try using the linker script generation tools to generate an ELF that maps
-correctly to your hardware design.
-'Finished building: mpu6050.elf.elfcheck'
-' '
-18:33:00 **** Auto Build of configuration Debug for project mpu6050 ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu6050.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: mpu6050.elf section `.text' will not fit in region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl'
-c:/xilinx/14.7/ise_ds/edk/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.6.4/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_i_bram_ctrl_microblaze_0_d_bram_ctrl' overflowed by 51352 bytes
-collect2: ld returned 1 exit status
-make: *** [mpu6050.elf] Error 1
-18:37:07 **** Auto Build of configuration Debug for project mpu6050 ****
-make all 
-'Building target: mpu6050.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu6050.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu6050.elf  |tee "mpu6050.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  82176	   1608	  33056	 116840	  1c868	mpu6050.elf
+  93704	   1616	   2336	  97656	  17d78	mpu6050.elf
 'Finished building: mpu6050.elf.size'
 ' '
 'Invoking: Xilinx ELF Check'
@@ -184,55 +83,16 @@ ELF file	: mpu6050.elf
 elfcheck passed.
 'Finished building: mpu6050.elf.elfcheck'
 ' '
-18:37:41 **** Auto Build of project standalone_bsp_0 ****
-make -k all 
-'Finished building libraries'
-18:38:28 **** Incremental Build of configuration Debug for project mpu6050 ****
-make all 
-make: No se hace nada para `all'.
-18:39:49 **** Auto Build of configuration Debug for project mpu6050 ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu6050.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu6050.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu6050.elf  |tee "mpu6050.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  82176	   1608	  33056	 116840	  1c868	mpu6050.elf
-'Finished building: mpu6050.elf.size'
-' '
-'Invoking: Xilinx ELF Check'
-elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
-elfcheck
-Xilinx EDK 14.7 Build EDK_P.20131013
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
-microblaze_0 mpu6050.elf 
-
-ELF file	: mpu6050.elf
-elfcheck passed.
-'Finished building: mpu6050.elf.elfcheck'
-' '
-18:39:52 **** Incremental Build of configuration Debug for project mpu6050 ****
-make all 
-make: No se hace nada para `all'.
-18:44:55 **** Auto Build of configuration Debug for project mpu6050 ****
+20:12:23 **** Auto Build of configuration Debug for project mpu6050 ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
 ../src/main.c: In function 'main':
-../src/main.c:88:40: error: expected expression before ')' token
+../src/main.c:55:32: error: 'FilterTimer' undeclared (first use in this function)
+../src/main.c:55:32: note: each undeclared identifier is reported only once for each function it appears in
 make: *** [src/main.o] Error 1
-18:45:40 **** Auto Build of configuration Debug for project mpu6050 ****
+20:12:28 **** Auto Build of configuration Debug for project mpu6050 ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -247,7 +107,7 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -m
 'Invoking: MicroBlaze Print Size'
 mb-size mpu6050.elf  |tee "mpu6050.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  94568	   1608	  33056	 129232	  1f8d0	mpu6050.elf
+  93796	   1616	   2372	  97784	  17df8	mpu6050.elf
 'Finished building: mpu6050.elf.size'
 ' '
 'Invoking: Xilinx ELF Check'
@@ -263,7 +123,470 @@ ELF file	: mpu6050.elf
 elfcheck passed.
 'Finished building: mpu6050.elf.elfcheck'
 ' '
-18:45:59 **** Auto Build of configuration Debug for project mpu6050 ****
+20:13:21 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:132:1: warning: return type defaults to 'int' [-Wreturn-type]
+../src/main.c: In function 'filterTimerStart':
+../src/main.c:134:40: error: 'time' undeclared (first use in this function)
+../src/main.c:134:40: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+20:13:57 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:131:1: warning: return type defaults to 'int' [-Wreturn-type]
+../src/main.c: In function 'filterTimerStart':
+../src/main.c:137:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93768	   1616	   2368	  97752	  17dd8	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:15:15 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:131:1: warning: return type defaults to 'int' [-Wreturn-type]
+../src/main.c:137:1: warning: return type defaults to 'int' [-Wreturn-type]
+../src/main.c: In function 'filterTimerEnd':
+../src/main.c:140:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/main.c: In function 'filterTimerStart':
+../src/main.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93768	   1616	   2368	  97752	  17dd8	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:15:20 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:131:1: warning: return type defaults to 'int' [-Wreturn-type]
+../src/main.c:137:1: warning: return type defaults to 'int' [-Wreturn-type]
+../src/main.c: In function 'filterTimerEnd':
+../src/main.c:140:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/main.c: In function 'filterTimerStart':
+../src/main.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93768	   1616	   2368	  97752	  17dd8	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:15:49 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:131:1: warning: return type defaults to 'int' [-Wreturn-type]
+../src/main.c: In function 'filterTimerStart':
+../src/main.c:135:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93768	   1616	   2368	  97752	  17dd8	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:15:52 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c:131:1: warning: return type defaults to 'int' [-Wreturn-type]
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93768	   1616	   2368	  97752	  17dd8	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:16:06 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93768	   1616	   2368	  97752	  17dd8	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:16:52 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:87:4: error: 'start' undeclared (first use in this function)
+../src/main.c:87:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:87:4: warning: implicit declaration of function 'filterTimerStart' [-Wimplicit-function-declaration]
+../src/main.c:92:4: error: 'end' undeclared (first use in this function)
+../src/main.c:92:4: warning: implicit declaration of function 'filterTimerEnd' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:132:5: error: conflicting types for 'filterTimerStart'
+../src/main.c:87:12: note: previous implicit declaration of 'filterTimerStart' was here
+../src/main.c:139:5: error: conflicting types for 'filterTimerEnd'
+../src/main.c:92:10: note: previous implicit declaration of 'filterTimerEnd' was here
+make: *** [src/main.o] Error 1
+20:17:03 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:89:4: warning: implicit declaration of function 'filterTimerStart' [-Wimplicit-function-declaration]
+../src/main.c:94:4: warning: implicit declaration of function 'filterTimerEnd' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:134:5: error: conflicting types for 'filterTimerStart'
+../src/main.c:89:12: note: previous implicit declaration of 'filterTimerStart' was here
+../src/main.c:141:5: error: conflicting types for 'filterTimerEnd'
+../src/main.c:94:10: note: previous implicit declaration of 'filterTimerEnd' was here
+make: *** [src/main.o] Error 1
+20:17:04 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:89:4: warning: implicit declaration of function 'filterTimerStart' [-Wimplicit-function-declaration]
+../src/main.c:94:4: warning: implicit declaration of function 'filterTimerEnd' [-Wimplicit-function-declaration]
+../src/main.c: At top level:
+../src/main.c:134:5: error: conflicting types for 'filterTimerStart'
+../src/main.c:89:12: note: previous implicit declaration of 'filterTimerStart' was here
+../src/main.c:141:5: error: conflicting types for 'filterTimerEnd'
+../src/main.c:94:10: note: previous implicit declaration of 'filterTimerEnd' was here
+make: *** [src/main.o] Error 1
+20:17:23 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94256	   1616	   2376	  98248	  17fc8	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:18:05 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c: In function 'filtre':
+../src/mpu6050.c:229:6: warning: unused variable 'dT' [-Wunused-variable]
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  94256	   1616	   2376	  98248	  17fc8	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:18:24 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c:223:6: error: conflicting types for 'filtre'
+../src/mpu6050.h:142:6: note: previous declaration of 'filtre' was here
+../src/mpu6050.c: In function 'filtre':
+../src/mpu6050.c:229:6: warning: unused variable 'dT' [-Wunused-variable]
+make: *** [src/mpu6050.o] Error 1
+20:20:11 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c:223:6: error: conflicting types for 'filtre'
+../src/mpu6050.h:142:6: note: previous declaration of 'filtre' was here
+../src/mpu6050.c: In function 'filtre':
+../src/mpu6050.c:229:6: warning: unused variable 'dT' [-Wunused-variable]
+make: *** [src/mpu6050.o] Error 1
+20:21:54 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:111:4: error: too many arguments to function 'filtre'
+../src/mpu6050.h:142:6: note: declared here
+make: *** [src/main.o] Error 1
+20:22:07 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c: In function 'filtre':
+../src/mpu6050.c:229:6: warning: unused variable 'dT' [-Wunused-variable]
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95104	   1616	   2376	  99096	  18318	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:22:35 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c: In function 'filtre':
+../src/mpu6050.c:229:6: warning: unused variable 'dT' [-Wunused-variable]
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95128	   1616	   2376	  99120	  18330	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:22:50 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+../src/mpu6050.c: In function 'filtre':
+../src/mpu6050.c:229:9: warning: unused variable 'dT' [-Wunused-variable]
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95156	   1616	   2380	  99152	  18350	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:23:42 **** Auto Build of configuration Debug for project mpu6050 ****
 make all 
 'Building file: ../src/mpu6050.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -278,7 +601,7 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -m
 'Invoking: MicroBlaze Print Size'
 mb-size mpu6050.elf  |tee "mpu6050.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  94488	   1608	  33056	 129152	  1f880	mpu6050.elf
+  95292	   1616	   2380	  99288	  183d8	mpu6050.elf
 'Finished building: mpu6050.elf.size'
 ' '
 'Invoking: Xilinx ELF Check'
@@ -294,78 +617,7 @@ ELF file	: mpu6050.elf
 elfcheck passed.
 'Finished building: mpu6050.elf.elfcheck'
 ' '
-18:46:51 **** Incremental Build of configuration Debug for project mpu6050 ****
-make all 
-make: No se hace nada para `all'.
-18:48:15 **** Auto Build of configuration Debug for project mpu6050 ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu6050.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu6050.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu6050.elf  |tee "mpu6050.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  94480	   1608	  33056	 129144	  1f878	mpu6050.elf
-'Finished building: mpu6050.elf.size'
-' '
-'Invoking: Xilinx ELF Check'
-elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
-elfcheck
-Xilinx EDK 14.7 Build EDK_P.20131013
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
-microblaze_0 mpu6050.elf 
-
-ELF file	: mpu6050.elf
-elfcheck passed.
-'Finished building: mpu6050.elf.elfcheck'
-' '
-18:48:22 **** Incremental Build of configuration Debug for project mpu6050 ****
-make all 
-make: No se hace nada para `all'.
-18:49:42 **** Auto Build of configuration Debug for project mpu6050 ****
-make all 
-'Building file: ../src/main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
-'Finished building: ../src/main.c'
-' '
-'Building target: mpu6050.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: mpu6050.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size mpu6050.elf  |tee "mpu6050.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  94480	   1608	  33056	 129144	  1f878	mpu6050.elf
-'Finished building: mpu6050.elf.size'
-' '
-'Invoking: Xilinx ELF Check'
-elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
-elfcheck
-Xilinx EDK 14.7 Build EDK_P.20131013
-Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
-
-Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
-microblaze_0 mpu6050.elf 
-
-ELF file	: mpu6050.elf
-elfcheck passed.
-'Finished building: mpu6050.elf.elfcheck'
-' '
-18:49:45 **** Incremental Build of configuration Debug for project mpu6050 ****
-make all 
-make: No se hace nada para `all'.
-18:51:33 **** Auto Build of configuration Debug for project mpu6050 ****
+20:24:01 **** Auto Build of configuration Debug for project mpu6050 ****
 make all 
 'Building file: ../src/mpu6050.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -380,7 +632,7 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -m
 'Invoking: MicroBlaze Print Size'
 mb-size mpu6050.elf  |tee "mpu6050.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  94480	   1608	  33056	 129144	  1f878	mpu6050.elf
+  95324	   1616	   2380	  99320	  183f8	mpu6050.elf
 'Finished building: mpu6050.elf.size'
 ' '
 'Invoking: Xilinx ELF Check'
@@ -396,10 +648,69 @@ ELF file	: mpu6050.elf
 elfcheck passed.
 'Finished building: mpu6050.elf.elfcheck'
 ' '
-18:51:40 **** Incremental Build of configuration Debug for project mpu6050 ****
+20:26:21 **** Auto Build of configuration Debug for project mpu6050 ****
 make all 
-make: No se hace nada para `all'.
-18:53:02 **** Auto Build of configuration Debug for project mpu6050 ****
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95356	   1616	   2380	  99352	  18418	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:26:38 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95356	   1616	   2380	  99352	  18418	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+20:27:51 **** Auto Build of configuration Debug for project mpu6050 ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -414,7 +725,7 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -m
 'Invoking: MicroBlaze Print Size'
 mb-size mpu6050.elf  |tee "mpu6050.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  94480	   1608	  33056	 129144	  1f878	mpu6050.elf
+  95356	   1616	   2380	  99352	  18418	mpu6050.elf
 'Finished building: mpu6050.elf.size'
 ' '
 'Invoking: Xilinx ELF Check'
@@ -430,19 +741,13 @@ ELF file	: mpu6050.elf
 elfcheck passed.
 'Finished building: mpu6050.elf.elfcheck'
 ' '
-18:53:34 **** Incremental Build of configuration Debug for project mpu6050 ****
-make all 
-make: No se hace nada para `all'.
-18:53:42 **** Incremental Build of configuration Debug for project mpu6050 ****
-make all 
-make: No se hace nada para `all'.
-18:54:18 **** Auto Build of project standalone_bsp_0 ****
+20:32:20 **** Auto Build of project standalone_bsp_0 ****
 make -k all 
 'Finished building libraries'
-18:54:20 **** Incremental Build of configuration Debug for project mpu6050 ****
+20:32:39 **** Incremental Build of configuration Debug for project mpu6050 ****
 make all 
 make: No se hace nada para `all'.
-18:55:18 **** Auto Build of configuration Debug for project mpu6050 ****
+20:34:58 **** Auto Build of configuration Debug for project mpu6050 ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -457,7 +762,7 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -m
 'Invoking: MicroBlaze Print Size'
 mb-size mpu6050.elf  |tee "mpu6050.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  94480	   1608	  33056	 129144	  1f878	mpu6050.elf
+  95388	   1616	   2380	  99384	  18438	mpu6050.elf
 'Finished building: mpu6050.elf.size'
 ' '
 'Invoking: Xilinx ELF Check'
@@ -473,10 +778,57 @@ ELF file	: mpu6050.elf
 elfcheck passed.
 'Finished building: mpu6050.elf.elfcheck'
 ' '
-18:55:22 **** Incremental Build of configuration Debug for project mpu6050 ****
+20:35:02 **** Incremental Build of configuration Debug for project mpu6050 ****
 make all 
 make: No se hace nada para `all'.
-18:55:56 **** Auto Build of configuration Debug for project mpu6050 ****
+20:38:22 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+20:38:48 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+20:38:51 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+20:40:03 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+20:40:04 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+20:41:15 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+20:41:15 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+20:41:39 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+20:42:35 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+20:42:58 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+20:43:39 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+20:45:04 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+20:45:15 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+21:04:44 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'filterTimerEnd':
+../src/main.c:149:1: error: expected ';' before '}' token
+make: *** [src/main.o] Error 1
+21:04:45 **** Auto Build of configuration Debug for project mpu6050 ****
 make all 
 'Building file: ../src/main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -491,7 +843,7 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -m
 'Invoking: MicroBlaze Print Size'
 mb-size mpu6050.elf  |tee "mpu6050.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  94484	   1608	  33060	 129152	  1f880	mpu6050.elf
+  95396	   1616	   2380	  99392	  18440	mpu6050.elf
 'Finished building: mpu6050.elf.size'
 ' '
 'Invoking: Xilinx ELF Check'
@@ -507,3 +859,503 @@ ELF file	: mpu6050.elf
 elfcheck passed.
 'Finished building: mpu6050.elf.elfcheck'
 ' '
+21:05:08 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+21:05:09 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+21:09:04 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95396	   1616	   2380	  99392	  18440	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:09:24 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95656	   1616	   2376	  99648	  18540	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:09:31 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95632	   1616	   2376	  99624	  18528	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:09:42 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95656	   1616	   2376	  99648	  18540	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:09:57 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95624	   1616	   2376	  99616	  18520	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:10:16 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+21:10:26 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+21:12:12 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93852	   1616	   2372	  97840	  17e30	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:12:16 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+21:12:27 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+21:12:54 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93800	   1616	   2368	  97784	  17df8	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:12:59 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+21:13:30 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'filterTimerStart':
+../src/main.c:141:17: error: 'FilterTimer' undeclared (first use in this function)
+../src/main.c:141:17: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c: In function 'filterTimerEnd':
+../src/main.c:147:27: error: 'FilterTimer' undeclared (first use in this function)
+../src/main.c:148:1: warning: control reaches end of non-void function [-Wreturn-type]
+../src/main.c: In function 'filterTimerStart':
+../src/main.c:143:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/main.o] Error 1
+21:13:43 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93736	   1616	   2336	  97688	  17d98	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:13:47 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+21:14:46 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93704	   1616	   2336	  97656	  17d78	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:15:04 **** Clean-only build of configuration Debug for project mpu6050 ****
+make clean 
+rm -rf  ./src/display.o ./src/main.o ./src/mpu6050.o  ./src/display.d ./src/main.d ./src/mpu6050.d  mpu6050.elf.size  mpu6050.elf.elfcheck  mpu6050.elf
+' '
+21:15:04 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf microblaze_0
+21:15:05 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../ethernet_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../ethernet_hw_platform/system.xml -pe microblaze_0
+-log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c  -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections"'.
+"Compiling common"
+"Compiling standalone";
+"Compiling tmrctr"
+"Compiling uartlite"
+"Compiling gpio"
+"Compiling emaclite"
+"Compiling iic"
+"Compiling bram"
+"Compiling intc"
+"Compiling cpu"
+Running execs_generate.
+'Finished building libraries'
+21:15:34 **** Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/display.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/display.d" -MT"src/display.d" -o "src/display.o" "../src/display.c"
+'Finished building: ../src/display.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/mpu6050.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mpu6050.d" -MT"src/mpu6050.d" -o "src/mpu6050.o" "../src/mpu6050.c"
+'Finished building: ../src/mpu6050.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93704	   1616	   2336	  97656	  17d78	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:15:45 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+'Finished building libraries'
+21:15:46 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+21:16:42 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  93704	   1616	  33056	 128376	  1f578	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:16:47 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.
+21:17:44 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95592	   1616	  33096	 130304	  1fd00	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:17:58 **** Auto Build of configuration Debug for project mpu6050 ****
+make all 
+'Building target: mpu6050.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v8.50.c -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mpu6050.elf"  ./src/display.o ./src/main.o ./src/mpu6050.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mpu6050.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size mpu6050.elf  |tee "mpu6050.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95592	   1616	 180552	 277760	  43d00	mpu6050.elf
+'Finished building: mpu6050.elf.size'
+' '
+'Invoking: Xilinx ELF Check'
+elfcheck mpu6050.elf -hw ../../ethernet_hw_platform/system.xml -pe microblaze_0  |tee "mpu6050.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../ethernet_hw_platform/system.xml -pe
+microblaze_0 mpu6050.elf 
+
+ELF file	: mpu6050.elf
+elfcheck passed.
+'Finished building: mpu6050.elf.elfcheck'
+' '
+21:18:09 **** Incremental Build of configuration Debug for project mpu6050 ****
+make all 
+make: No se hace nada para `all'.

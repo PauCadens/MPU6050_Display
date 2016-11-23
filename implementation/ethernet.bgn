@@ -8,7 +8,7 @@ C:\Xilinx\14.7\ISE_DS\ISE\;C:\Xilinx\14.7\ISE_DS\EDK.
    "ethernet" is an NCD, version 3.2, device xc6slx9, package csg324, speed -2
 Opened constraints file ethernet.pcf.
 
-Tue Nov 22 18:27:21 2016
+Wed Nov 23 20:03:14 2016
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -w -g TdoPin:PULLNONE -g StartUpClk:JTAGCLK -g UnusedPin:Pullnone ethernet.ncd 
 

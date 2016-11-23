@@ -1,16 +1,46 @@
-18:28:43.605 INFO  - Processing command line option -hwspec C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\ethernet.xml. 
-18:37:40.955 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/ethernet/SDK/SDK_Export/ethernet_hw_platform/download.bit" 
-18:39:54.126 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-18:46:52.293 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
-18:52:00.112 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(Unknown Source)
-	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+20:07:14.028 INFO  - Processing command line option -hwspec C:\Users\Pc\Documents\VHDL\ethernet\SDK\SDK_Export\hw\ethernet.xml. 
+20:32:02.930 ERROR - FPGA Configuration failed.Connection to Board Failed
 
-18:52:00.112 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 
-18:53:34.906 ERROR - Unexpected error while issuing command {"command": "xfpga_isconfigured -cable type digilent_plugin"} to XMD: java.net.SocketException: Connection reset by peer: socket write error 
-18:53:34.906 ERROR - Checking FPGA configuration failed.. 
-18:53:41.519 ERROR - Unexpected error while issuing command {"command": "xdisconnect -cable"} to XMD: java.net.SocketException: Connection reset by peer: socket write error 
-18:53:43.901 ERROR - Unexpected error while issuing command {"command": "xfpga_isconfigured -cable type digilent_plugin"} to XMD: java.net.SocketException: Connection reset by peer: socket write error 
-18:53:43.901 ERROR - Checking FPGA configuration failed.. 
-18:54:17.537 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/ethernet/SDK/SDK_Export/ethernet_hw_platform/download.bit" 
-19:23:44.773 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+20:32:19.397 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/ethernet/SDK/SDK_Export/ethernet_hw_platform/download.bit" 
+20:38:47.337 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/ethernet/SDK/SDK_Export/ethernet_hw_platform/download.bit" 
+20:40:02.453 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/ethernet/SDK/SDK_Export/ethernet_hw_platform/download.bit" 
+20:41:14.356 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/ethernet/SDK/SDK_Export/ethernet_hw_platform/download.bit" 
+20:41:40.764 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+20:41:43.633 INFO  - System reset is completed. 
+20:42:37.052 INFO  - System reset is completed. 
+20:43:00.021 INFO  - System reset is completed. 
+20:43:24.559 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error stopping at main.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+20:43:41.639 INFO  - System reset is completed. 
+20:44:40.618 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target selection failed.
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+20:45:02.660 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/ethernet/SDK/SDK_Export/ethernet_hw_platform/download.bit" 
+20:45:17.108 INFO  - System reset is completed. 
+21:05:07.143 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/ethernet/SDK/SDK_Export/ethernet_hw_platform/download.bit" 
+21:10:15.628 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/ethernet/SDK/SDK_Export/ethernet_hw_platform/download.bit" 
+21:12:18.043 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Debug Operation Not Supported on the Target
+MicroBlaze Pipeline Stalled on a Blocking Instruction or Invalid Bus Access
+    Stalled PC: 0xa4015564
+    Try Resetting the Processor to Continue..
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+21:13:00.536 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:13:48.186 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:15:41.485 WARN  - Terminating existing sessions on processor microblaze_0 
+21:15:44.402 INFO  - FPGA configured successfully with bitstream "C:/Users/Pc/Documents/VHDL/ethernet/SDK/SDK_Export/ethernet_hw_platform/download.bit" 
+21:18:10.343 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+21:20:00.021 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:20:00.036 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
